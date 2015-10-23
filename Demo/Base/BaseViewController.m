@@ -58,23 +58,24 @@
                                    NSFontAttributeName:[UIFont systemFontOfSize:18]
                                    };
     [self.navigationController.navigationBar setTitleTextAttributes:attributeDic];
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     
     self.hasBackButton = YES;
 }
 
-- (void)setHasBackButton:(BOOL)hasBackButton {
-    _hasBackButton = hasBackButton;
-    if (hasBackButton == NO) {
-        self.navigationItem.leftBarButtonItem = nil;
-        self.navigationItem.hidesBackButton = YES;
-    }else {
-        NSInteger count = self.navigationController.viewControllers.count;
-        if (count > 1) {
-            //自定义导航返回按钮
-            self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:nil] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
-        }
-    }
-}
+//- (void)setHasBackButton:(BOOL)hasBackButton {
+//    _hasBackButton = hasBackButton;
+//    if (hasBackButton == NO) {
+//        self.navigationItem.leftBarButtonItem = nil;
+//        self.navigationItem.hidesBackButton = YES;
+//    }else {
+//        NSInteger count = self.navigationController.viewControllers.count;
+//        if (count > 1) {
+//            //自定义导航返回按钮
+//            self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:nil] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
+//        }
+//    }
+//}
 
 - (void)backAction {
     [self.navigationController popViewControllerAnimated:YES];

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WaterFallCellID" id="gTV-IL-0wX" customClass="WaterFallCell">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="154"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d41-CN-9nB">
+                        <rect key="frame" x="0.0" y="0.0" width="138" height="134"/>
+                        <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgN-A0-0E8">
+                        <rect key="frame" x="0.0" y="134" width="138" height="20"/>
+                        <color key="backgroundColor" red="0.85490202903747559" green="0.96078437566757202" blue="0.89019614458084106" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="nda-Kf-Ut6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.94509810209274292" green="0.11764706671237946" blue="0.36862745881080627" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NgN-A0-0E8" secondAttribute="bottom" id="9Sb-4O-Kh9"/>
+                <constraint firstAttribute="trailing" secondItem="NgN-A0-0E8" secondAttribute="trailing" id="GgU-RF-o8W"/>
+                <constraint firstItem="NgN-A0-0E8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="I4a-kx-5mA"/>
+                <constraint firstItem="NgN-A0-0E8" firstAttribute="top" secondItem="d41-CN-9nB" secondAttribute="bottom" id="OtS-PW-3pu"/>
+                <constraint firstItem="d41-CN-9nB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fjI-A4-KUA"/>
+                <constraint firstItem="d41-CN-9nB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ouL-Zg-zhb"/>
+                <constraint firstAttribute="trailing" secondItem="d41-CN-9nB" secondAttribute="trailing" id="zxI-nJ-stk"/>
+            </constraints>
+            <size key="customSize" width="138" height="154"/>
+            <connections>
+                <outlet property="imageView" destination="d41-CN-9nB" id="PoM-XJ-Xtq"/>
+                <outlet property="label" destination="NgN-A0-0E8" id="cbv-Fp-cNC"/>
+            </connections>
+            <point key="canvasLocation" x="208" y="255"/>
+        </collectionViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

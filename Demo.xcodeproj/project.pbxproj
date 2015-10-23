@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B8C6D7381BDA193800E83A6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7371BDA193800E83A6F /* main.m */; };
 		B8C6D73B1BDA193800E83A6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D73A1BDA193800E83A6F /* AppDelegate.m */; };
-		B8C6D73E1BDA193800E83A6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D73D1BDA193800E83A6F /* ViewController.m */; };
 		B8C6D7411BDA193800E83A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C6D73F1BDA193800E83A6F /* Main.storyboard */; };
 		B8C6D7431BDA193800E83A6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C6D7421BDA193800E83A6F /* Images.xcassets */; };
 		B8C6D7461BDA193800E83A6F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C6D7441BDA193800E83A6F /* LaunchScreen.xib */; };
@@ -25,6 +24,12 @@
 		B8C6D77C1BDA1BA500E83A6F /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7771BDA1BA500E83A6F /* BaseModel.m */; };
 		B8C6D77D1BDA1BA500E83A6F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7791BDA1BA500E83A6F /* BaseViewController.m */; };
 		B8C6D7821BDA1D6A00E83A6F /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7811BDA1D6A00E83A6F /* MMExampleDrawerVisualStateManager.m */; };
+		B8C6D7871BDA2CD800E83A6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7861BDA2CD800E83A6F /* ViewController.m */; };
+		B8C6D78A1BDA2E2B00E83A6F /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7891BDA2E2B00E83A6F /* LeftViewController.m */; };
+		B8C6D78E1BDA323000E83A6F /* WaterFallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D78C1BDA323000E83A6F /* WaterFallCell.m */; };
+		B8C6D78F1BDA323000E83A6F /* WaterFallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C6D78D1BDA323000E83A6F /* WaterFallCell.xib */; };
+		B8C6D7921BDA333300E83A6F /* WaterFallFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7911BDA333300E83A6F /* WaterFallFlowLayout.m */; };
+		B8C6D7951BDA335F00E83A6F /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7941BDA335F00E83A6F /* WaterFlowViewController.m */; };
 		BC407622B08F117655EBD68B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E93BE241C6BCDA5DE2F2310 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,8 +52,6 @@
 		B8C6D7371BDA193800E83A6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8C6D7391BDA193800E83A6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8C6D73A1BDA193800E83A6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B8C6D73C1BDA193800E83A6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B8C6D73D1BDA193800E83A6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B8C6D7401BDA193800E83A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8C6D7421BDA193800E83A6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B8C6D7451BDA193800E83A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,6 +81,17 @@
 		B8C6D7801BDA1D6A00E83A6F /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
 		B8C6D7811BDA1D6A00E83A6F /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		B8C6D7831BDA247200E83A6F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B8C6D7851BDA2CD800E83A6F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B8C6D7861BDA2CD800E83A6F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B8C6D7881BDA2E2B00E83A6F /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		B8C6D7891BDA2E2B00E83A6F /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		B8C6D78B1BDA323000E83A6F /* WaterFallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFallCell.h; sourceTree = "<group>"; };
+		B8C6D78C1BDA323000E83A6F /* WaterFallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFallCell.m; sourceTree = "<group>"; };
+		B8C6D78D1BDA323000E83A6F /* WaterFallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterFallCell.xib; sourceTree = "<group>"; };
+		B8C6D7901BDA333300E83A6F /* WaterFallFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFallFlowLayout.h; sourceTree = "<group>"; };
+		B8C6D7911BDA333300E83A6F /* WaterFallFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFallFlowLayout.m; sourceTree = "<group>"; };
+		B8C6D7931BDA335F00E83A6F /* WaterFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowViewController.h; sourceTree = "<group>"; };
+		B8C6D7941BDA335F00E83A6F /* WaterFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +146,6 @@
 			children = (
 				B8C6D7391BDA193800E83A6F /* AppDelegate.h */,
 				B8C6D73A1BDA193800E83A6F /* AppDelegate.m */,
-				B8C6D73C1BDA193800E83A6F /* ViewController.h */,
-				B8C6D73D1BDA193800E83A6F /* ViewController.m */,
 				B8C6D7841BDA265000E83A6F /* images */,
 				B8C6D75B1BDA19ED00E83A6F /* Base */,
 				B8C6D75C1BDA19ED00E83A6F /* Common */,
@@ -213,6 +225,12 @@
 		B8C6D75D1BDA19ED00E83A6F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B8C6D7851BDA2CD800E83A6F /* ViewController.h */,
+				B8C6D7861BDA2CD800E83A6F /* ViewController.m */,
+				B8C6D7881BDA2E2B00E83A6F /* LeftViewController.h */,
+				B8C6D7891BDA2E2B00E83A6F /* LeftViewController.m */,
+				B8C6D7931BDA335F00E83A6F /* WaterFlowViewController.h */,
+				B8C6D7941BDA335F00E83A6F /* WaterFlowViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,6 +245,11 @@
 		B8C6D75F1BDA19ED00E83A6F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B8C6D78B1BDA323000E83A6F /* WaterFallCell.h */,
+				B8C6D78C1BDA323000E83A6F /* WaterFallCell.m */,
+				B8C6D78D1BDA323000E83A6F /* WaterFallCell.xib */,
+				B8C6D7901BDA333300E83A6F /* WaterFallFlowLayout.h */,
+				B8C6D7911BDA333300E83A6F /* WaterFallFlowLayout.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -346,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C6D78F1BDA323000E83A6F /* WaterFallCell.xib in Resources */,
 				B8C6D7411BDA193800E83A6F /* Main.storyboard in Resources */,
 				B8C6D7461BDA193800E83A6F /* LaunchScreen.xib in Resources */,
 				B8C6D7431BDA193800E83A6F /* Images.xcassets in Resources */,
@@ -405,12 +429,16 @@
 				B8C6D77A1BDA1BA500E83A6F /* BaseMJCollectionView.m in Sources */,
 				B8C6D76B1BDA1A6600E83A6F /* CustomTextView.m in Sources */,
 				B8C6D76C1BDA1A6600E83A6F /* NSString+Category.m in Sources */,
+				B8C6D78A1BDA2E2B00E83A6F /* LeftViewController.m in Sources */,
 				B8C6D77C1BDA1BA500E83A6F /* BaseModel.m in Sources */,
+				B8C6D7921BDA333300E83A6F /* WaterFallFlowLayout.m in Sources */,
 				B8C6D7821BDA1D6A00E83A6F /* MMExampleDrawerVisualStateManager.m in Sources */,
 				B8C6D76D1BDA1A6600E83A6F /* UIAlertView+Category.m in Sources */,
+				B8C6D7871BDA2CD800E83A6F /* ViewController.m in Sources */,
+				B8C6D7951BDA335F00E83A6F /* WaterFlowViewController.m in Sources */,
 				B8C6D76A1BDA1A6600E83A6F /* Common.m in Sources */,
+				B8C6D78E1BDA323000E83A6F /* WaterFallCell.m in Sources */,
 				B8C6D77D1BDA1BA500E83A6F /* BaseViewController.m in Sources */,
-				B8C6D73E1BDA193800E83A6F /* ViewController.m in Sources */,
 				B8C6D73B1BDA193800E83A6F /* AppDelegate.m in Sources */,
 				B8C6D7381BDA193800E83A6F /* main.m in Sources */,
 			);
