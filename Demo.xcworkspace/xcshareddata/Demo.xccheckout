@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E1E13071-2AB1-4744-8475-95177122D4EB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E7F5BD929112550339737995B5D01F7DA6D519FC</key>
+		<string>https://github.com/lyf1002/Demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Demo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E7F5BD929112550339737995B5D01F7DA6D519FC</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lyf1002/Demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E7F5BD929112550339737995B5D01F7DA6D519FC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7F5BD929112550339737995B5D01F7DA6D519FC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Demo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
