@@ -45,7 +45,7 @@
     self.navigationController.navigationBar.shadowImage = [[UIImage alloc]init];
     
     //设置导航栏的背景图片
-    UIImage *image = [UIImage imageNamed:nil];
+    UIImage *image = [UIImage imageNamed:@""];
     if (UIDeviceSystemVersion >= 7.0) {
         //7.0要拉伸图片
         image = [image stretchableImageWithLeftCapWidth:1 topCapHeight:1];
@@ -207,12 +207,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    TESTLog(@"%@ 内存警告！！！",[self class]);
+    NSLog(@"%@ 内存警告！！！",[self class]);
 }
 
 - (void)dealloc
 {
-    TESTLog(@"%@ 销毁了！！！",[self class]);
+    NSLog(@"%@ 销毁了！！！",[self class]);
 }
 
 /*

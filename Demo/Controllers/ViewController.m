@@ -20,8 +20,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"Demo汇总";
-    
+    NSLog(@"%@",NSHomeDirectory());
     self.titles = @[@"collectionView实现瀑布流"];
+
+//    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"213",@"appid", nil];
+//    
+//    if (![DataService isConnectionAvailable]) {
+//        NSLog(@"000000000000");
+//    }
+//    [[DataService shareDataService]requestWithURLString:listPage
+//                                             parameters:params
+//                                             httpMethod:httpMethod_POST
+//                                                timeOut:kTimeoutInterval
+//                                                success:^(id responseObject) {
+//                                                    NSLog(@"%@",responseObject);
+//                                                } failure:^(NSError *error) {
+//                                                    NSLog(@"请求失败:%@",error.localizedDescription);
+//                                                } noNetConnection:^{
+//                                                    [self showTextMessage:@"没有网络连接" hideAfterDelay:2];
+//                                                }];
 
     [self initViews];
 }

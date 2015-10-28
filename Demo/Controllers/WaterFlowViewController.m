@@ -47,7 +47,7 @@ static CGFloat const kMagin = 6;
 - (void)initViews {
     //创建布局类
     WaterFallFlowLayout *layout = [[WaterFallFlowLayout alloc]init];
-    
+
     self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-kStatusbarHeight-kNavgationbarHeight) collectionViewLayout:layout];
     [self.collectionView registerClass:[WaterFallCell class] forCellWithReuseIdentifier:@"WaterFallCellID"];
     self.collectionView.delegate = self;

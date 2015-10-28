@@ -13,22 +13,34 @@
 #import "AppDelegate.h"
 #import "UIAlertView+Category.h"
 #import "NSString+Category.h"
+#import "MBProgressHUD+Category.h"
 #import <Foundation/Foundation.h>
 #import "MMExampleDrawerVisualStateManager.h"
 #import <UIImageView+WebCache.h>
+#import "DataService.h"
+#import "DBManager.h"
+#import "PortUrl.h"
+#import "Tools.h"
 
-//设置是否调试模式(1:打印  0:不打印)
+////设置是否调试模式(1:打印  0:不打印)
+//#ifdef DEBUG
+//#define TEST_DEBUG 1
+//#else
+//#define TEST_DEBUG 0
+//#endif
+//#if TEST_DEBUG
+//#define TESTLog(xx, ...)  NSLog(@"%s(%d行): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+//#else
+//#define TESTLog(xx, ...)  ((void)0)
+//#endif
+
+//重写NSLog输出
 #ifdef DEBUG
-#define TEST_DEBUG 1
+#define NSLog(format, ...) fprintf(stderr,"%s(%d行):\n%s\n\n",__PRETTY_FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String]);
 #else
-#define TEST_DEBUG 0
+#define NSLog(format, ...) nil
 #endif
 
-#if TEST_DEBUG
-#define TESTLog(xx, ...)  NSLog(@"%s(%d行): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
-#else
-#define TESTLog(xx, ...)  ((void)0)
-#endif
 
 //强引用，弱引用
 #define WEAK_SELF __weak __typeof(&*self)weakSelf = self;
