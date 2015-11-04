@@ -23,6 +23,7 @@
     }
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:superView animated:YES];
     hud.mode = MBProgressHUDModeText;
+    hud.minSize = CGSizeMake(100, 0);
     hud.cornerRadius = 2;
     hud.alpha = 0.8;
     hud.margin = 10;

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionHeaderViewID" id="U6b-Vx-4bR" customClass="CollectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头视图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdH-Gc-wbJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <color key="backgroundColor" red="0.15294118230000001" green="0.76862752440000004" blue="0.39607846740000002" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="LdH-Gc-wbJ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="E2E-jq-hq7"/>
+                <constraint firstItem="LdH-Gc-wbJ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="l3x-9q-OJY"/>
+                <constraint firstAttribute="bottom" secondItem="LdH-Gc-wbJ" secondAttribute="bottom" id="pIu-63-f9u"/>
+                <constraint firstAttribute="trailing" secondItem="LdH-Gc-wbJ" secondAttribute="trailing" id="tkE-hF-F2W"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="LdH-Gc-wbJ" id="gIz-Zr-O3O"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>

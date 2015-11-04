@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "WaterFlowViewController.h"
+#import "CollectionViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -21,13 +22,23 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"Demo汇总";
     NSLog(@"%@",NSHomeDirectory());
-    self.titles = @[@"collectionView实现瀑布流"];
+    self.titles = @[@"collectionView实现瀑布流",@"collectionView"];
 
-//    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"213",@"appid", nil];
-//    
-//    if (![DataService isConnectionAvailable]) {
-//        NSLog(@"000000000000");
-//    }
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"213",@"appid", nil];
+
+    [self initViews];
+    NSString *text = nil;
+    if (![[DataService shareDataService].reachability isReachable]) {
+        text = @"没网";
+    }else if ([[DataService shareDataService].reachability isReachableViaWiFi]) {
+        text = @"WiFi网";
+    }else if ([[DataService shareDataService].reachability isReachableViaWWAN]) {
+        text = @"移动网";
+    }
+    [DataService shareDataService].reachability.reachableBlock = ^(Reachability *reachability){
+        
+    };
+    [MBProgressHUD showText:text toView:self.view];
 //    [[DataService shareDataService]requestWithURLString:listPage
 //                                             parameters:params
 //                                             httpMethod:httpMethod_POST
@@ -39,8 +50,6 @@
 //                                                } noNetConnection:^{
 //                                                    [self showTextMessage:@"没有网络连接" hideAfterDelay:2];
 //                                                }];
-
-    [self initViews];
 }
 
 - (void)initViews {
@@ -98,7 +107,8 @@
             break;
         case 1:
         {
-
+            CollectionViewController *collectionVC = [[CollectionViewController alloc]init];
+            [self.navigationController pushViewController:collectionVC animated:YES];
         }
             break;
         case 2:

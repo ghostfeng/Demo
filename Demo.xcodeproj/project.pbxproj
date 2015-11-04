@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B82CFFA01BE1BB4C00D289FF /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82CFF9F1BE1BB4C00D289FF /* CollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B82CFFA41BE1BB8100D289FF /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B82CFFA21BE1BB8100D289FF /* CollectionHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		B82CFFA51BE1BB8100D289FF /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82CFFA31BE1BB8100D289FF /* CollectionHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
+		B82CFFA91BE1BB9100D289FF /* CollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B82CFFA71BE1BB9100D289FF /* CollectionFooterView.m */; settings = {ASSET_TAGS = (); }; };
+		B82CFFAA1BE1BB9100D289FF /* CollectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82CFFA81BE1BB9100D289FF /* CollectionFooterView.xib */; settings = {ASSET_TAGS = (); }; };
 		B86DF0BB1BE0BE5D007AAD76 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DF0BA1BE0BE5D007AAD76 /* DBManager.m */; settings = {ASSET_TAGS = (); }; };
 		B875316F1BE0D0BC000B61F9 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B875316E1BE0D0BC000B61F9 /* Tools.m */; settings = {ASSET_TAGS = (); }; };
 		B87AC5291BDE289D00B8D7DC /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = B87AC5281BDE289D00B8D7DC /* DataService.m */; };
+		B8BDB0721BE1BE9B001FA9F8 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BDB0701BE1BE9B001FA9F8 /* CollectionCell.m */; settings = {ASSET_TAGS = (); }; };
+		B8BDB0731BE1BE9B001FA9F8 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8BDB0711BE1BE9B001FA9F8 /* CollectionCell.xib */; settings = {ASSET_TAGS = (); }; };
 		B8C6D7381BDA193800E83A6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7371BDA193800E83A6F /* main.m */; };
 		B8C6D73B1BDA193800E83A6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D73A1BDA193800E83A6F /* AppDelegate.m */; };
 		B8C6D7411BDA193800E83A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C6D73F1BDA193800E83A6F /* Main.storyboard */; };
@@ -51,6 +58,14 @@
 		0A1FE5D508DA2F55464F7F3C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7E93BE241C6BCDA5DE2F2310 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DC3CC47AC5FE8B2B66E437 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B82CFF9E1BE1BB4C00D289FF /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		B82CFF9F1BE1BB4C00D289FF /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		B82CFFA11BE1BB8100D289FF /* CollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderView.h; sourceTree = "<group>"; };
+		B82CFFA21BE1BB8100D289FF /* CollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderView.m; sourceTree = "<group>"; };
+		B82CFFA31BE1BB8100D289FF /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		B82CFFA61BE1BB9100D289FF /* CollectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionFooterView.h; sourceTree = "<group>"; };
+		B82CFFA71BE1BB9100D289FF /* CollectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionFooterView.m; sourceTree = "<group>"; };
+		B82CFFA81BE1BB9100D289FF /* CollectionFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionFooterView.xib; sourceTree = "<group>"; };
 		B86DF0B91BE0BE5D007AAD76 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		B86DF0BA1BE0BE5D007AAD76 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		B875316D1BE0D0BC000B61F9 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
@@ -58,6 +73,9 @@
 		B87AC5271BDE289D00B8D7DC /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
 		B87AC5281BDE289D00B8D7DC /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
 		B87AC52A1BDE299400B8D7DC /* PortUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortUrl.h; sourceTree = "<group>"; };
+		B8BDB06F1BE1BE9B001FA9F8 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
+		B8BDB0701BE1BE9B001FA9F8 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
+		B8BDB0711BE1BE9B001FA9F8 /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
 		B8C6D7321BDA193800E83A6F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C6D7361BDA193800E83A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8C6D7371BDA193800E83A6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -253,6 +271,8 @@
 				B8C6D7891BDA2E2B00E83A6F /* LeftViewController.m */,
 				B8C6D7931BDA335F00E83A6F /* WaterFlowViewController.h */,
 				B8C6D7941BDA335F00E83A6F /* WaterFlowViewController.m */,
+				B82CFF9E1BE1BB4C00D289FF /* CollectionViewController.h */,
+				B82CFF9F1BE1BB4C00D289FF /* CollectionViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -272,6 +292,15 @@
 				B8C6D78D1BDA323000E83A6F /* WaterFallCell.xib */,
 				B8C6D7901BDA333300E83A6F /* WaterFallFlowLayout.h */,
 				B8C6D7911BDA333300E83A6F /* WaterFallFlowLayout.m */,
+				B82CFFA11BE1BB8100D289FF /* CollectionHeaderView.h */,
+				B82CFFA21BE1BB8100D289FF /* CollectionHeaderView.m */,
+				B82CFFA31BE1BB8100D289FF /* CollectionHeaderView.xib */,
+				B82CFFA61BE1BB9100D289FF /* CollectionFooterView.h */,
+				B82CFFA71BE1BB9100D289FF /* CollectionFooterView.m */,
+				B82CFFA81BE1BB9100D289FF /* CollectionFooterView.xib */,
+				B8BDB06F1BE1BE9B001FA9F8 /* CollectionCell.h */,
+				B8BDB0701BE1BE9B001FA9F8 /* CollectionCell.m */,
+				B8BDB0711BE1BE9B001FA9F8 /* CollectionCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,8 +421,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8C6D78F1BDA323000E83A6F /* WaterFallCell.xib in Resources */,
+				B82CFFAA1BE1BB9100D289FF /* CollectionFooterView.xib in Resources */,
 				B8C6D7411BDA193800E83A6F /* Main.storyboard in Resources */,
 				B8C6D7461BDA193800E83A6F /* LaunchScreen.xib in Resources */,
+				B82CFFA51BE1BB8100D289FF /* CollectionHeaderView.xib in Resources */,
+				B8BDB0731BE1BE9B001FA9F8 /* CollectionCell.xib in Resources */,
 				B8C6D7431BDA193800E83A6F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,14 +477,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82CFFA91BE1BB9100D289FF /* CollectionFooterView.m in Sources */,
 				B86DF0BB1BE0BE5D007AAD76 /* DBManager.m in Sources */,
+				B82CFFA41BE1BB8100D289FF /* CollectionHeaderView.m in Sources */,
 				B8C6D76E1BDA1A6600E83A6F /* UIViewExt.m in Sources */,
 				B8C6D77B1BDA1BA500E83A6F /* BaseMJTableView.m in Sources */,
+				B82CFFA01BE1BB4C00D289FF /* CollectionViewController.m in Sources */,
 				B875316F1BE0D0BC000B61F9 /* Tools.m in Sources */,
 				B8C6D7711BDA1ACB00E83A6F /* UIView+Category.m in Sources */,
 				B8C6D77A1BDA1BA500E83A6F /* BaseMJCollectionView.m in Sources */,
 				B8C6D76B1BDA1A6600E83A6F /* CustomTextView.m in Sources */,
 				B8F76FB91BDF0DD40017A741 /* MBProgressHUD+Category.m in Sources */,
+				B8BDB0721BE1BE9B001FA9F8 /* CollectionCell.m in Sources */,
 				B8C6D76C1BDA1A6600E83A6F /* NSString+Category.m in Sources */,
 				B8C6D78A1BDA2E2B00E83A6F /* LeftViewController.m in Sources */,
 				B8C6D77C1BDA1BA500E83A6F /* BaseModel.m in Sources */,
@@ -525,7 +561,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hua Wang (857NQ53FC7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hua Wang (857NQ53FC7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -547,6 +584,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8bb383c7-6e8e-4974-92d3-dbddedb365c3";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -569,7 +607,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hua Wang (857NQ53FC7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hua Wang (857NQ53FC7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -584,6 +623,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "8bb383c7-6e8e-4974-92d3-dbddedb365c3";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -595,10 +635,12 @@
 			baseConfigurationReference = 0A1FE5D508DA2F55464F7F3C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hua Wang (857NQ53FC7)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8bb383c7-6e8e-4974-92d3-dbddedb365c3";
 			};
 			name = Debug;
 		};
@@ -607,10 +649,12 @@
 			baseConfigurationReference = 95DC3CC47AC5FE8B2B66E437 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hua Wang (857NQ53FC7)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8bb383c7-6e8e-4974-92d3-dbddedb365c3";
 			};
 			name = Release;
 		};

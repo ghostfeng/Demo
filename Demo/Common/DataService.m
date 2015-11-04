@@ -7,7 +7,7 @@
 //
 
 #import "DataService.h"
-
+#import <netinet/in.h>
 
 @implementation DataService
 
@@ -16,9 +16,9 @@
  *
  *  @return 单例对象
  */
+static DataService * sessionManage = nil;
 + (DataService *)shareDataService {
     
-    static DataService * sessionManage = nil;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -44,7 +44,7 @@
                                        failure:(void (^)(NSError *error))failure
                               noNetConnection:(void (^)())noNetConnection
 {
-    if (![self.reachabilityManager isReachable]) {
+    if (![self.reachability isReachable]) {
         //没有网络连接
         if (noNetConnection) {
             noNetConnection();
@@ -94,6 +94,13 @@
     return nil;
 }
 
+- (Reachability *)reachability {
+    if (!_reachability) {
+        _reachability = [Reachability reachabilityForInternetConnection];
+    }
+    return  _reachability;
+}
+
 -(void)startNetMonitoring{
     //开始监控网络
     [self.reachabilityManager startMonitoring];
@@ -108,13 +115,14 @@
                 text = @"亲.你的网络断开啦";
                 break;
             case AFNetworkReachabilityStatusReachableViaWWAN:
-                text = @"亲.你目前是移动网络哦.";
+                text = @"亲.你目前是移动网络";
                 break;
             case AFNetworkReachabilityStatusReachableViaWiFi:
-                text = @"亲.已切换到WiFi网络,可以happy啦";
+                text = @"亲.已切换到WiFi网络";
                 break;
         }
-        [MBProgressHUD showText:text toView:nil];
+//        [MBProgressHUD showText:text toView:nil];
+        NSLog(@"%@",text);
     }];
 }
 
@@ -124,9 +132,31 @@
  *  @return 结果
  */
 + (BOOL)isConnectionAvailable {
-    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
-    [manager startMonitoring];
-    return [manager isReachable];
+//    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+//    NSLog(@"%ld",manager.networkReachabilityStatus)
+//    [manager startMonitoring];
+//    return [manager isReachable];
+
+    struct sockaddr_in zeroAddress;
+    bzero(&zeroAddress, sizeof(zeroAddress));
+    zeroAddress.sin_len = sizeof(zeroAddress);
+    zeroAddress.sin_family = AF_INET;
+    
+    SCNetworkReachabilityRef defaultRouteReachability = SCNetworkReachabilityCreateWithAddress(NULL, (struct sockaddr *)&zeroAddress);
+    SCNetworkReachabilityFlags flags;
+    
+    BOOL didRetrieveFlags = SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags);
+    CFRelease(defaultRouteReachability);
+    
+    if (!didRetrieveFlags)
+    {
+        NSLog(@"Error. Could not recover network reachability flags");
+        return NO;
+    }
+    
+    BOOL isReachable = flags & kSCNetworkFlagsReachable;
+    BOOL needsConnection = flags & kSCNetworkFlagsConnectionRequired;
+    return (isReachable && !needsConnection) ? YES : NO;
 }
 
 @end

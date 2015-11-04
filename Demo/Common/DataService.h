@@ -7,11 +7,14 @@
 //
 
 #import "AFHTTPSessionManager.h"
+#import <Reachability.h>
 
 static NSString *const httpMethod_POST = @"POST";
 static NSString *const httpMethod_GET  = @"GET";
 
 @interface DataService : AFHTTPSessionManager
+
+@property(nonatomic,strong)Reachability *reachability;
 
 /**
  *  @brief  单例对象
