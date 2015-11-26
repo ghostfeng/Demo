@@ -46,7 +46,7 @@
 {
     [super setText:text];
     
-    if (self.text.length) {
+    if (text.length) {
         _hidePlaceholder = NO;
     }else{
         _hidePlaceholder = YES;

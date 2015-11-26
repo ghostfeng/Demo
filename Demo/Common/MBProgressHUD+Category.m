@@ -26,6 +26,8 @@
     hud.minSize = CGSizeMake(100, 0);
     hud.cornerRadius = 2;
     hud.alpha = 0.8;
+    hud.color = [UIColor whiteColor];
+    hud.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
     hud.margin = 10;
     hud.labelText = text;
     hud.labelFont = [UIFont boldSystemFontOfSize:16];

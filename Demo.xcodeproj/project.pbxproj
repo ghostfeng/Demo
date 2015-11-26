@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B82CFFA01BE1BB4C00D289FF /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82CFF9F1BE1BB4C00D289FF /* CollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		B82CFFA41BE1BB8100D289FF /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B82CFFA21BE1BB8100D289FF /* CollectionHeaderView.m */; settings = {ASSET_TAGS = (); }; };
-		B82CFFA51BE1BB8100D289FF /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82CFFA31BE1BB8100D289FF /* CollectionHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
-		B82CFFA91BE1BB9100D289FF /* CollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B82CFFA71BE1BB9100D289FF /* CollectionFooterView.m */; settings = {ASSET_TAGS = (); }; };
-		B82CFFAA1BE1BB9100D289FF /* CollectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82CFFA81BE1BB9100D289FF /* CollectionFooterView.xib */; settings = {ASSET_TAGS = (); }; };
-		B86DF0BB1BE0BE5D007AAD76 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DF0BA1BE0BE5D007AAD76 /* DBManager.m */; settings = {ASSET_TAGS = (); }; };
-		B875316F1BE0D0BC000B61F9 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B875316E1BE0D0BC000B61F9 /* Tools.m */; settings = {ASSET_TAGS = (); }; };
+		B82CFFA01BE1BB4C00D289FF /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82CFF9F1BE1BB4C00D289FF /* CollectionViewController.m */; };
+		B82CFFA41BE1BB8100D289FF /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B82CFFA21BE1BB8100D289FF /* CollectionHeaderView.m */; };
+		B82CFFA51BE1BB8100D289FF /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82CFFA31BE1BB8100D289FF /* CollectionHeaderView.xib */; };
+		B82CFFA91BE1BB9100D289FF /* CollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B82CFFA71BE1BB9100D289FF /* CollectionFooterView.m */; };
+		B82CFFAA1BE1BB9100D289FF /* CollectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82CFFA81BE1BB9100D289FF /* CollectionFooterView.xib */; };
+		B86DF0BB1BE0BE5D007AAD76 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DF0BA1BE0BE5D007AAD76 /* DBManager.m */; };
+		B875316F1BE0D0BC000B61F9 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B875316E1BE0D0BC000B61F9 /* Tools.m */; };
 		B87AC5291BDE289D00B8D7DC /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = B87AC5281BDE289D00B8D7DC /* DataService.m */; };
-		B8BDB0721BE1BE9B001FA9F8 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BDB0701BE1BE9B001FA9F8 /* CollectionCell.m */; settings = {ASSET_TAGS = (); }; };
-		B8BDB0731BE1BE9B001FA9F8 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8BDB0711BE1BE9B001FA9F8 /* CollectionCell.xib */; settings = {ASSET_TAGS = (); }; };
+		B8BDB0721BE1BE9B001FA9F8 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BDB0701BE1BE9B001FA9F8 /* CollectionCell.m */; };
+		B8BDB0731BE1BE9B001FA9F8 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8BDB0711BE1BE9B001FA9F8 /* CollectionCell.xib */; };
 		B8C6D7381BDA193800E83A6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7371BDA193800E83A6F /* main.m */; };
 		B8C6D73B1BDA193800E83A6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D73A1BDA193800E83A6F /* AppDelegate.m */; };
 		B8C6D7411BDA193800E83A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C6D73F1BDA193800E83A6F /* Main.storyboard */; };
@@ -40,7 +40,8 @@
 		B8C6D78F1BDA323000E83A6F /* WaterFallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C6D78D1BDA323000E83A6F /* WaterFallCell.xib */; };
 		B8C6D7921BDA333300E83A6F /* WaterFallFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7911BDA333300E83A6F /* WaterFallFlowLayout.m */; };
 		B8C6D7951BDA335F00E83A6F /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7941BDA335F00E83A6F /* WaterFlowViewController.m */; };
-		B8F76FB91BDF0DD40017A741 /* MBProgressHUD+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F76FB81BDF0DD40017A741 /* MBProgressHUD+Category.m */; settings = {ASSET_TAGS = (); }; };
+		B8CB533D1BFB14040025E23C /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB533C1BFB14040025E23C /* NSObject+Category.m */; };
+		B8F76FB91BDF0DD40017A741 /* MBProgressHUD+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F76FB81BDF0DD40017A741 /* MBProgressHUD+Category.m */; };
 		BC407622B08F117655EBD68B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E93BE241C6BCDA5DE2F2310 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,8 @@
 		B8C6D7911BDA333300E83A6F /* WaterFallFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFallFlowLayout.m; sourceTree = "<group>"; };
 		B8C6D7931BDA335F00E83A6F /* WaterFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowViewController.h; sourceTree = "<group>"; };
 		B8C6D7941BDA335F00E83A6F /* WaterFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowViewController.m; sourceTree = "<group>"; };
+		B8CB533B1BFB14040025E23C /* NSObject+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		B8CB533C1BFB14040025E23C /* NSObject+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 		B8F76FB71BDF0DD40017A741 /* MBProgressHUD+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Category.h"; sourceTree = "<group>"; };
 		B8F76FB81BDF0DD40017A741 /* MBProgressHUD+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,6 +247,8 @@
 				B8C6D7631BDA1A6600E83A6F /* CustomTextView.m */,
 				B8C6D7641BDA1A6600E83A6F /* NSString+Category.h */,
 				B8C6D7651BDA1A6600E83A6F /* NSString+Category.m */,
+				B8CB533B1BFB14040025E23C /* NSObject+Category.h */,
+				B8CB533C1BFB14040025E23C /* NSObject+Category.m */,
 				B8C6D7661BDA1A6600E83A6F /* UIAlertView+Category.h */,
 				B8C6D7671BDA1A6600E83A6F /* UIAlertView+Category.m */,
 				B8C6D76F1BDA1ACB00E83A6F /* UIView+Category.h */,
@@ -500,6 +505,7 @@
 				B8C6D7951BDA335F00E83A6F /* WaterFlowViewController.m in Sources */,
 				B8C6D76A1BDA1A6600E83A6F /* Common.m in Sources */,
 				B8C6D78E1BDA323000E83A6F /* WaterFallCell.m in Sources */,
+				B8CB533D1BFB14040025E23C /* NSObject+Category.m in Sources */,
 				B8C6D77D1BDA1BA500E83A6F /* BaseViewController.m in Sources */,
 				B8C6D73B1BDA193800E83A6F /* AppDelegate.m in Sources */,
 				B8C6D7381BDA193800E83A6F /* main.m in Sources */,
