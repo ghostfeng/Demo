@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <objc/runtime.h>
-@interface NSObject (Category)
 
+@interface NSObject (Category)
+/**
+ *  @author 刘永峰, 2016-12-29
+ *
+ *  @brief 获取error的错误信息
+ *
+ *  @param error error
+ *
+ *  @return 错误信息
+ */
+- (NSString *)tipFromError:(NSError *)error;
 @end

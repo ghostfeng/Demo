@@ -15,6 +15,7 @@
 		B86DF0BB1BE0BE5D007AAD76 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DF0BA1BE0BE5D007AAD76 /* DBManager.m */; };
 		B875316F1BE0D0BC000B61F9 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B875316E1BE0D0BC000B61F9 /* Tools.m */; };
 		B87AC5291BDE289D00B8D7DC /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = B87AC5281BDE289D00B8D7DC /* DataService.m */; };
+		B886CEDC1C3A197E008B2E54 /* UIViewController+YFCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B886CEDB1C3A197E008B2E54 /* UIViewController+YFCategory.m */; };
 		B8BDB0721BE1BE9B001FA9F8 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BDB0701BE1BE9B001FA9F8 /* CollectionCell.m */; };
 		B8BDB0731BE1BE9B001FA9F8 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8BDB0711BE1BE9B001FA9F8 /* CollectionCell.xib */; };
 		B8C6D7381BDA193800E83A6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7371BDA193800E83A6F /* main.m */; };
@@ -74,6 +75,8 @@
 		B87AC5271BDE289D00B8D7DC /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
 		B87AC5281BDE289D00B8D7DC /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
 		B87AC52A1BDE299400B8D7DC /* PortUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortUrl.h; sourceTree = "<group>"; };
+		B886CEDA1C3A197E008B2E54 /* UIViewController+YFCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YFCategory.h"; sourceTree = "<group>"; };
+		B886CEDB1C3A197E008B2E54 /* UIViewController+YFCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YFCategory.m"; sourceTree = "<group>"; };
 		B8BDB06F1BE1BE9B001FA9F8 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
 		B8BDB0701BE1BE9B001FA9F8 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
 		B8BDB0711BE1BE9B001FA9F8 /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 				B8C6D7651BDA1A6600E83A6F /* NSString+Category.m */,
 				B8CB533B1BFB14040025E23C /* NSObject+Category.h */,
 				B8CB533C1BFB14040025E23C /* NSObject+Category.m */,
+				B886CEDA1C3A197E008B2E54 /* UIViewController+YFCategory.h */,
+				B886CEDB1C3A197E008B2E54 /* UIViewController+YFCategory.m */,
 				B8C6D7661BDA1A6600E83A6F /* UIAlertView+Category.h */,
 				B8C6D7671BDA1A6600E83A6F /* UIAlertView+Category.m */,
 				B8C6D76F1BDA1ACB00E83A6F /* UIView+Category.h */,
@@ -483,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B82CFFA91BE1BB9100D289FF /* CollectionFooterView.m in Sources */,
+				B886CEDC1C3A197E008B2E54 /* UIViewController+YFCategory.m in Sources */,
 				B86DF0BB1BE0BE5D007AAD76 /* DBManager.m in Sources */,
 				B82CFFA41BE1BB8100D289FF /* CollectionHeaderView.m in Sources */,
 				B8C6D76E1BDA1A6600E83A6F /* UIViewExt.m in Sources */,
