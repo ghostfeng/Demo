@@ -16,12 +16,38 @@
  *
  *  @return 加密后的字符串
  */
-- (NSString *)MD5String {
-    const char *str = [self UTF8String];
-    unsigned char r[CC_MD5_DIGEST_LENGTH];
-    CC_MD5(str, (uint32_t)strlen(str), r);
-    return [NSString stringWithFormat:@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
-            r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9], r[10], r[11], r[12], r[13], r[14], r[15]];
+- (NSString *)MD5String
+{
+    // 得出bytes
+    const char *cstring = self.UTF8String;
+    unsigned char bytes[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(cstring, (CC_LONG)strlen(cstring), bytes);
+    
+    // 拼接
+    NSMutableString *md5String = [NSMutableString string];
+    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [md5String appendFormat:@"%02x", bytes[i]];
+    }
+    return md5String;
 }
 
+- (NSString *)prependCaches
+{
+    return [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:self];
+}
+
+- (NSString *)prependDocuments
+{
+    return [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:self];
+}
+
+- (NSString *)prependLibrary
+{
+    return [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:self];
+}
+
+- (NSString *)prependTmp
+{
+    return [NSTemporaryDirectory() stringByAppendingPathComponent:self];
+}
 @end
