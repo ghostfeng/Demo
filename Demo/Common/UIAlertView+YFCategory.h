@@ -9,7 +9,7 @@
 
 typedef void(^UIAlertViewCallBackBlock) (NSInteger buttonIndex ,UIAlertView *alertView);
 
-@interface UIAlertView (Category)<UIAlertViewDelegate>
+@interface UIAlertView (YFCategory)<UIAlertViewDelegate>
 
 @property(nonatomic,copy)UIAlertViewCallBackBlock alertViewCallBackBlock;
 

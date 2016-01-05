@@ -1,21 +1,9 @@
-//
-//  NSString+Category.m
-//  ModelOne
-//
-//  Created by LiuYongfeng on 15/10/22.
-//  Copyright © 2015年 LiuYongfeng. All rights reserved.
-//
 
-#import "NSString+Category.h"
+#import "NSString+YFCategory.h"
 #import <CommonCrypto/CommonDigest.h>
 
-@implementation NSString (Category)
+@implementation NSString (YFCategory)
 
-/**
- *  @brief  字符串MD5加密
- *
- *  @return 加密后的字符串
- */
 - (NSString *)MD5String
 {
     // 得出bytes

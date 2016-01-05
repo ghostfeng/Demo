@@ -5,12 +5,12 @@
 //  Copyright (c) 2015年 LiuYongfeng. All rights reserved.
 //
 
-#import "UIAlertView+Category.h"
+#import "UIAlertView+YFCategory.h"
 #import <objc/runtime.h>
 
 static void* UIAlertViewKey = @"UIAlertViewKey";
 
-@implementation UIAlertView (Category)
+@implementation UIAlertView (YFCategory)
 
 + (UIAlertView *)showAlertViewWithCallBackBlock:(UIAlertViewCallBackBlock)alertViewCallBackBlock
                                           style:(UIAlertViewStyle)style

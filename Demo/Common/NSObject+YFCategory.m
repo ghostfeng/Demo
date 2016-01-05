@@ -1,24 +1,8 @@
-//
-//  NSObject+Category.m
-//  Demo
-//
-//  Created by LiuYongfeng on 15/11/17.
-//  Copyright © 2015年 LiuYongfeng. All rights reserved.
-//
 
-#import "NSObject+Category.h"
+#import "NSObject+YFCategory.h"
 
-@implementation NSObject (Category)
+@implementation NSObject (YFCategory)
 
-/**
- *  @author 刘永峰, 2016-12-29
- *
- *  @brief 获取error的错误信息
- *
- *  @param error error
- *
- *  @return 错误信息
- */
 - (NSString *)tipFromError:(NSError *)error
 {
     if (error && error.userInfo) {

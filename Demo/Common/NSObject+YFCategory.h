@@ -1,14 +1,7 @@
-//
-//  NSObject+Category.h
-//  Demo
-//
-//  Created by LiuYongfeng on 15/11/17.
-//  Copyright © 2015年 LiuYongfeng. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (Category)
+@interface NSObject (YFCategory)
 /**
  *  @author 刘永峰, 2016-12-29
  *

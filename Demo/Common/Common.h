@@ -9,10 +9,9 @@
 #ifndef Demo_Common_h
 #define Demo_Common_h
 
-#import "UIViewExt.h"
 #import "AppDelegate.h"
-#import "UIAlertView+Category.h"
-#import "NSString+Category.h"
+#import "UIAlertView+YFCategory.h"
+#import "NSString+YFCategory.h"
 #import "MBProgressHUD+Category.h"
 #import <Foundation/Foundation.h>
 #import "MMExampleDrawerVisualStateManager.h"
