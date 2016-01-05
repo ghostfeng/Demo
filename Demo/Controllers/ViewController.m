@@ -35,10 +35,10 @@
     }else if ([[DataService shareDataService].reachability isReachableViaWWAN]) {
         text = @"移动网";
     }
-    [DataService shareDataService].reachability.reachableBlock = ^(Reachability *reachability){
-        
-    };
-    [MBProgressHUD showText:text toView:self.view];
+//    [DataService shareDataService].reachability.reachableBlock = ^(Reachability *reachability){
+//        
+//    };
+//    [MBProgressHUD showText:text toView:self.view];
 //    [[DataService shareDataService]requestWithURLString:listPage
 //                                             parameters:params
 //                                             httpMethod:httpMethod_POST
