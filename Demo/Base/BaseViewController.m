@@ -33,7 +33,7 @@
     }
     
     //点击屏幕收起键盘
-    self.isTapAnywhereToDismissKeyBoard = YES;
+//    self.isTapAnywhereToDismissKeyBoard = YES;
     
     //设置导航栏的样式
     self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
@@ -210,10 +210,6 @@
     NSLog(@"%@ 内存警告！！！",[self class]);
 }
 
-- (void)dealloc
-{
-    NSLog(@"%@ 销毁了！！！",[self class]);
-}
 
 /*
 #pragma mark - Navigation
