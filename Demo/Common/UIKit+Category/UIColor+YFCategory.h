@@ -27,7 +27,7 @@
  */
 + (UIColor *)colorWithHexString:(NSString *)stringToConvert;
 
-/**随机色*/
+/** 随机色 */
 + (UIColor *)randomColor;
 
 @end
