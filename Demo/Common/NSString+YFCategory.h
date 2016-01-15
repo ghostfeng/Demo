@@ -18,4 +18,7 @@
 
 /** 拼接沙盒tmp路径 */
 - (NSString *)prependTmp;
+
+/** 在指定路径下创建文件夹 */
+- (BOOL)createDirectory;
 @end

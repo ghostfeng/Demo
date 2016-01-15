@@ -38,4 +38,28 @@
 {
     return [NSTemporaryDirectory() stringByAppendingPathComponent:self];
 }
+
+- (BOOL)createDirectory
+{
+    BOOL isDirectory = NO;
+    BOOL flag = YES;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL isExist = [fileManager fileExistsAtPath:self isDirectory:&isDirectory];
+    NSError *error = nil;
+    if (!isExist) {
+        //不存在，创建
+        flag = [fileManager createDirectoryAtPath:self withIntermediateDirectories:YES attributes:nil error:&error];
+        return flag;
+    }
+    if (isDirectory) {
+        return YES;
+    }
+    //不是文件夹，移除再创建
+    flag = [fileManager removeItemAtPath:self error:&error];
+    if (flag) {
+        flag = [fileManager createDirectoryAtPath:self withIntermediateDirectories:YES attributes:nil error:&error];
+        return flag;
+    }
+    return NO;
+}
 @end

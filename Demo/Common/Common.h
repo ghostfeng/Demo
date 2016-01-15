@@ -54,6 +54,16 @@
  *  @return 控制器
  */
 id GetControllerFromStoryBoard(NSString *storyboardName , NSString *storyboardID);
+/**
+ *  @author 刘永峰
+ *
+ *  @brief 冒泡排序
+ *
+ *  @param a 存放整数的数组
+ *  @param n 数组的元素个数
+ */
+void bubble_sort(int *a , int n);
+void swap(int a , int b);
 
 //超时时间
 static const CGFloat kTimeoutInterval = 10.0f;
