@@ -21,4 +21,7 @@
 
 /** 在指定路径下创建文件夹 */
 - (BOOL)createDirectory;
+
+/** 删除指定路径下文件夹 */
+- (BOOL)removeDirectory;
 @end

@@ -26,6 +26,7 @@
     NSString *str = [@"你好.mp3" prependDocuments];
     BOOL result = [str createDirectory];
     NSLog(@"创建文件夹:%@",result?@"成功":@"失败");
+    [str removeDirectory];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"213",@"appid", nil];
 
     [self initViews];

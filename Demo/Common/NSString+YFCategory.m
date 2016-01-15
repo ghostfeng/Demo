@@ -62,4 +62,18 @@
     }
     return NO;
 }
+
+- (BOOL)removeDirectory
+{
+    BOOL isDirectory = NO;
+    BOOL flag = YES;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL isExist = [fileManager fileExistsAtPath:self isDirectory:&isDirectory];
+    NSError *error = nil;
+    //存在且为目录就删除
+    if (isDirectory&&isExist) {
+        flag = [fileManager removeItemAtPath:self error:&error];
+    }
+    return flag;
+}
 @end
