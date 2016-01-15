@@ -12,6 +12,7 @@
 #import "AppDelegate.h"
 #import "UIAlertView+YFCategory.h"
 #import "NSString+YFCategory.h"
+#import "NSObject+YFCategory.h"
 #import "MBProgressHUD+Category.h"
 #import <Foundation/Foundation.h>
 #import "MMExampleDrawerVisualStateManager.h"

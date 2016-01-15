@@ -126,7 +126,6 @@
     hud.mode = MBProgressHUDModeText;
     hud.cornerRadius = 2;
     hud.alpha = 0.8;
-//    hud.color = [[ThemeManager shareInstance]getThemeColor:@"Main_color"];
     hud.labelText = message;
     hud.minSize = CGSizeMake(100, 0);
     hud.margin = 10;

@@ -21,13 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"Demo汇总";
-    NSLog(@"%@",NSHomeDirectory());
+
     self.titles = @[@"collectionView实现瀑布流",@"collectionView"];
-    NSString *str = [@"你好.mp3" prependDocuments];
-    BOOL result = [str createDirectory];
-    NSLog(@"创建文件夹:%@",result?@"成功":@"失败");
-    [str removeDirectory];
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"213",@"appid", nil];
 
     [self initViews];
     NSString *text = nil;
@@ -38,21 +33,7 @@
     }else if ([[DataService shareDataService].reachability isReachableViaWWAN]) {
         text = @"移动网";
     }
-//    [DataService shareDataService].reachability.reachableBlock = ^(Reachability *reachability){
-//        
-//    };
-//    [MBProgressHUD showText:text toView:self.view];
-//    [[DataService shareDataService]requestWithURLString:listPage
-//                                             parameters:params
-//                                             httpMethod:httpMethod_POST
-//                                                timeOut:kTimeoutInterval
-//                                                success:^(id responseObject) {
-//                                                    NSLog(@"%@",responseObject);
-//                                                } failure:^(NSError *error) {
-//                                                    NSLog(@"请求失败:%@",error.localizedDescription);
-//                                                } noNetConnection:^{
-//                                                    [self showTextMessage:@"没有网络连接" hideAfterDelay:2];
-//                                                }];
+    [MBProgressHUD showText:text toView:self.view];
 }
 
 - (void)initViews {
@@ -101,6 +82,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [MBProgressHUD showHUD:@"加载中..." toView:self.view];
+    [[DataService shareDataService]requestWithURLString:listPage parameters:@{@"appid":@"213"} httpMethod:POST block:^(id responseObject, NSError *error) {
+        [MBProgressHUD hideHUD];
+        if (error) {
+            [MBProgressHUD showText:[self tipFromError:error] toView:self.view];
+        }else{
+            NSLog(@"%@",responseObject);
+        }
+    }];
+    return;
     switch (indexPath.row) {
         case 0:
         {

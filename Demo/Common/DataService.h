@@ -12,6 +12,11 @@
 static NSString *const httpMethod_POST = @"POST";
 static NSString *const httpMethod_GET  = @"GET";
 
+typedef NS_ENUM(NSInteger,HttpMethodType) {
+    GET = 1,
+    POST = 2
+};
+
 @interface DataService : AFHTTPSessionManager
 
 @property(nonatomic,strong)Reachability *reachability;
@@ -22,6 +27,12 @@ static NSString *const httpMethod_GET  = @"GET";
  *  @return 单例对象
  */
 + (DataService *)shareDataService;
+
+/** 网络请求 */
+- (NSURLSessionDataTask *)requestWithURLString:(NSString *)URLString
+                                    parameters:(id)parameters
+                                    httpMethod:(HttpMethodType)httpMethod
+                                         block:(void (^)(id responseObject,NSError *error))block;
 
 - (NSURLSessionDataTask *)requestWithURLString:(NSString *)URLString
                                     parameters:(id)parameters

@@ -27,4 +27,20 @@
  */
 + (void)showText:(NSString *)text toView:(UIView *)superView ;
 
+/**
+ *
+ *  @brief 显示加载提示
+ *
+ *  @param title     文本
+ *  @param superView 父视图
+ *
+ *  @return hud
+ */
++ (MBProgressHUD *)showHUD:(NSString *)title toView:(UIView *)superView;
+
+/**
+ *  @brief  隐藏加载提示
+ */
++ (void)hideHUD;
+
 @end

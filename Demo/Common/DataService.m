@@ -38,6 +38,49 @@ static DataService * sessionManage = nil;
 
 - (NSURLSessionDataTask *)requestWithURLString:(NSString *)URLString
                                     parameters:(id)parameters
+                                    httpMethod:(HttpMethodType)httpMethod
+                                         block:(void (^)(id responseObject,NSError *error))block
+{
+    if (URLString == nil || URLString.length == 0) {
+        return nil;
+    }
+    //设置超时时间
+    self.requestSerializer.timeoutInterval = 30;
+    
+    switch (httpMethod) {
+        case GET:
+        {
+            return [self GET:URLString parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+                if (block) {
+                    block(responseObject,nil);
+                }
+            } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                if (block){
+                    block(nil,error);
+                }
+            }];
+        }
+            break;
+        case POST:
+        {
+            return [self POST:URLString parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+                if (block) {
+                    block(responseObject,nil);
+                }
+            } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                if (block){
+                    block(nil,error);
+                }
+            }];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+- (NSURLSessionDataTask *)requestWithURLString:(NSString *)URLString
+                                    parameters:(id)parameters
                                     httpMethod:(NSString *)httpMethod
                                        timeOut:(NSTimeInterval)time
                                        success:(void (^)(id responseObject))success
