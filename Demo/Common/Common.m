@@ -15,7 +15,7 @@
  *
  *  @return 控制器
  */
-id GetControllerFromStoryBoard(NSString *storyboardName , NSString *storyboardID) {
+id getControllerFromStoryBoard(NSString *storyboardName , NSString *storyboardID) {
     return [[UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:storyboardID];
 }
 

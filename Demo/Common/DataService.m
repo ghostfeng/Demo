@@ -94,7 +94,7 @@ static DataService * sessionManage = nil;
         }
         return nil;
     }
-    
+
     //设置超时时间
     self.requestSerializer.timeoutInterval = time;
 
@@ -115,7 +115,7 @@ static DataService * sessionManage = nil;
             }
         }];
     }
-    
+
     if ([httpMethod isEqualToString:httpMethod_POST]) {
         return [self POST:URLString parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
             if (responseObject) {

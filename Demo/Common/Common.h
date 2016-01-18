@@ -22,21 +22,8 @@
 #import "PortUrl.h"
 #import "Tools.h"
 
-////设置是否调试模式(1:打印  0:不打印)
-//#ifdef DEBUG
-//#define TEST_DEBUG 1
-//#else
-//#define TEST_DEBUG 0
-//#endif
-//#if TEST_DEBUG
-//#define TESTLog(xx, ...)  NSLog(@"%s(%d行): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
-//#else
-//#define TESTLog(xx, ...)  ((void)0)
-//#endif
-
-//重写NSLog输出
 #ifdef DEBUG
-#define NSLog(format, ...) fprintf(stderr,"%s(%d行):\n%s\n\n",__PRETTY_FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String]);
+#define NSLog(format, ...) fprintf(stderr,"[%s:%d行]\n%s\n\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(format, ...) nil
 #endif
@@ -46,6 +33,22 @@
 #define WEAK_SELF __weak __typeof(&*self)weakSelf = self;
 #define STRONG_SELF __strong __typeof(&*self)strongSelf = weakSelf;
 
+// weak strong self 定义
+#define weakify( x ) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+autoreleasepool{} __weak __typeof__(x) __weak_##x##__ = x; \
+_Pragma("clang diagnostic pop")
+
+#define strongify( x ) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+try{} @finally{} __typeof__(x) x = __weak_##x##__; \
+_Pragma("clang diagnostic pop")
+
+#define KWeakSelf @weakify(self)
+#define KStrongSelf @strongify(self)
+
 /**
  *  @brief  通过storyBoard名称和storyBoardID获取控制器
  *
@@ -54,7 +57,7 @@
  *
  *  @return 控制器
  */
-id GetControllerFromStoryBoard(NSString *storyboardName , NSString *storyboardID);
+id getControllerFromStoryBoard(NSString *storyboardName , NSString *storyboardID);
 /**
  *  @author 刘永峰
  *
