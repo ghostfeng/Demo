@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "WaterFlowViewController.h"
 #import "CollectionViewController.h"
+#import "DownloadListViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -22,9 +23,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"Demo汇总";
 
-    self.titles = @[@"collectionView实现瀑布流",@"collectionView"];
+    self.titles = @[@"collectionView实现瀑布流",@"collectionView",@"断点续传"];
 
     [self initViews];
+    
+    /*
     NSString *text = nil;
     if (![[DataService shareDataService].reachability isReachable]) {
         text = @"没网";
@@ -34,6 +37,7 @@
         text = @"移动网";
     }
     [MBProgressHUD showText:text toView:self.view];
+     */
 }
 
 - (void)initViews {
@@ -82,16 +86,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [MBProgressHUD showHUD:@"加载中..." toView:self.view];
-    [[DataService shareDataService]requestWithURLString:listPage parameters:@{@"appid":@"213"} httpMethod:POST block:^(id responseObject, NSError *error) {
-        [MBProgressHUD hideHUD];
-        if (error) {
-            [MBProgressHUD showText:[self tipFromError:error] toView:self.view];
-        }else{
-            NSLog(@"%@",responseObject);
-        }
-    }];
-    return;
+//    [MBProgressHUD showHUD:@"加载中..." toView:self.view];
+//    [[DataService shareDataService]requestWithURLString:listPage parameters:@{@"appid":@"213"} httpMethod:POST block:^(id responseObject, NSError *error) {
+//        [MBProgressHUD hideHUD];
+//        if (error) {
+//            [MBProgressHUD showText:[self tipFromError:error] toView:self.view];
+//        }else{
+//            NSLog(@"%@",responseObject);
+//        }
+//    }];
+//    return;
     switch (indexPath.row) {
         case 0:
         {
@@ -107,7 +111,8 @@
             break;
         case 2:
         {
-
+            DownloadListViewController *downloadVC = [[DownloadListViewController alloc]init];
+            [self.navigationController pushViewController:downloadVC animated:YES];
         }
             break;
         case 3:
