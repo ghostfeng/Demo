@@ -76,4 +76,31 @@
     }
     return flag;
 }
+
+- (BOOL)isPhoneNumber
+{
+    NSString * phoneRegex = @"^(0|86|17951)?(13[0-9]|15[0-9]|17[0-9]|18[0-9]|14[0-9])[0-9]{8}$";
+    NSPredicate *pred  = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    return [pred evaluateWithObject:self];
+}
+
+- (BOOL)isUserIdCard
+{
+    BOOL flag = NO;
+    if (self.length <= 0) {
+        flag = NO;
+        return flag;
+    }
+    NSString *regex2 = @"^(\\d{14}|\\d{17})(\\d|[xX])$";
+    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex2];
+    flag = [identityCardPredicate evaluateWithObject:self];
+    return flag;
+}
+
+- (BOOL)isEmail
+{
+    NSString * emailRegex = @"^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$";
+    NSPredicate *pred  = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",emailRegex];
+    return [pred evaluateWithObject:self];
+}
 @end

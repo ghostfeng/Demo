@@ -69,17 +69,17 @@ id getControllerFromStoryBoard(NSString *storyboardName , NSString *storyboardID
 void bubble_sort(int *a , int n);
 void swap(int a , int b);
 
-//超时时间
-static const CGFloat kTimeoutInterval = 10.0f;
+/** 超时时间 */
+extern const CGFloat kTimeoutInterval;
 
-//标签栏的高度
-static const CGFloat kTabbarHeight = 49.0f;
+/** 标签栏的高度 */
+extern const CGFloat kTabbarHeight;
 
-//状态栏的高度
-static const CGFloat kStatusbarHeight = 20.0f;
+/** 状态栏的高度 */
+extern const CGFloat kStatusbarHeight;
 
-//导航栏的高度
-static const CGFloat kNavgationbarHeight = 44.0f;
+/** 导航栏的高度 */
+extern const CGFloat kNavgationbarHeight;
 
 //获取NSUserDefault
 #define UserDefault [NSUserDefaults standardUserDefaults]

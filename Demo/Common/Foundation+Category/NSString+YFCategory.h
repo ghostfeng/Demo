@@ -27,4 +27,14 @@
 
 /** 删除指定路径下文件夹 */
 - (BOOL)removeDirectory;
+
+#pragma mark - 验证信息
+/** 验证是否是手机号 */
+- (BOOL)isPhoneNumber;
+
+/** 验证是否是用户身份证号（15或18位） */
+- (BOOL)isUserIdCard;
+
+/** 验证是否是邮箱 */
+- (BOOL)isEmail;
 @end

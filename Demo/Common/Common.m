@@ -7,6 +7,20 @@
 //
 
 #import "Common.h"
+
+/** 超时时间 */
+const CGFloat kTimeoutInterval = 30.0f;
+
+/** 标签栏的高度 */
+const CGFloat kTabbarHeight = 49.0f;
+
+/** 状态栏的高度 */
+const CGFloat kStatusbarHeight = 20.0f;
+
+/** 导航栏的高度 */
+const CGFloat kNavgationbarHeight = 44.0f;
+
+
 /**
  *  @brief  通过storyBoard名称和storyBoardID获取控制器
  *
