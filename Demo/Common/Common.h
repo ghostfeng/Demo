@@ -69,6 +69,44 @@ id getControllerFromStoryBoard(NSString *storyboardName , NSString *storyboardID
 void bubble_sort(int *a , int n);
 void swap(int a , int b);
 
+#pragma mark - 接口引用
+/** 基接口 */
+extern NSString *const BASE_URL;
+
+/** 登录 */
+extern NSString *const login;
+//第三方登录
+extern NSString *const loginOther;
+//注册
+extern NSString *const registerAction;
+//更改密码
+extern NSString *const changePassword;
+//找回密码
+extern NSString *const forgetPassword;
+//更改头像
+extern NSString *const changeHeadImg;
+//用户状态
+extern NSString *const userState;
+//意见反馈
+extern NSString *const feedback;
+//列表总页
+extern NSString *const listPage;
+//某列表页
+extern NSString *const list;
+//详情页
+extern NSString *const contentPage;
+//评论列表
+extern NSString *const commentList;
+//评论
+extern NSString *const commitComment;
+//赞与踩信息
+extern NSString *const favourContent;
+//点赞或者踩
+extern NSString *const favourDo;
+//广告页
+extern NSString *const adpicture;
+
+#pragma mark - 常用常量
 /** 超时时间 */
 extern const CGFloat kTimeoutInterval;
 
