@@ -41,6 +41,9 @@
 		B8C6D78F1BDA323000E83A6F /* WaterFallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C6D78D1BDA323000E83A6F /* WaterFallCell.xib */; };
 		B8C6D7921BDA333300E83A6F /* WaterFallFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7911BDA333300E83A6F /* WaterFallFlowLayout.m */; };
 		B8C6D7951BDA335F00E83A6F /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D7941BDA335F00E83A6F /* WaterFlowViewController.m */; };
+		B8D3C4EF1C57619800B08271 /* YFDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D3C4EE1C57619800B08271 /* YFDownloadManager.m */; };
+		B8D3C4F51C57681B00B08271 /* YFDownloadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D3C4F41C57681B00B08271 /* YFDownloadInfo.m */; };
+		B8D3C4F81C57772F00B08271 /* YFDownloadConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D3C4F71C57772F00B08271 /* YFDownloadConst.m */; };
 		B8D4CEB21C521B1C002970F1 /* DownloadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D4CEB11C521B1C002970F1 /* DownloadListViewController.m */; };
 		B8D4CEBA1C521CDF002970F1 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D4CEB51C521CDF002970F1 /* DBManager.m */; };
 		B8D4CEBB1C521CDF002970F1 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D4CEB81C521CDF002970F1 /* DataService.m */; };
@@ -127,6 +130,12 @@
 		B8C6D7911BDA333300E83A6F /* WaterFallFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFallFlowLayout.m; sourceTree = "<group>"; };
 		B8C6D7931BDA335F00E83A6F /* WaterFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowViewController.h; sourceTree = "<group>"; };
 		B8C6D7941BDA335F00E83A6F /* WaterFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowViewController.m; sourceTree = "<group>"; };
+		B8D3C4ED1C57619800B08271 /* YFDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDownloadManager.h; sourceTree = "<group>"; };
+		B8D3C4EE1C57619800B08271 /* YFDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDownloadManager.m; sourceTree = "<group>"; };
+		B8D3C4F31C57681B00B08271 /* YFDownloadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDownloadInfo.h; sourceTree = "<group>"; };
+		B8D3C4F41C57681B00B08271 /* YFDownloadInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDownloadInfo.m; sourceTree = "<group>"; };
+		B8D3C4F61C57772F00B08271 /* YFDownloadConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDownloadConst.h; sourceTree = "<group>"; };
+		B8D3C4F71C57772F00B08271 /* YFDownloadConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDownloadConst.m; sourceTree = "<group>"; };
 		B8D4CEB01C521B1C002970F1 /* DownloadListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadListViewController.h; sourceTree = "<group>"; };
 		B8D4CEB11C521B1C002970F1 /* DownloadListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadListViewController.m; sourceTree = "<group>"; };
 		B8D4CEB41C521CDF002970F1 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
@@ -385,6 +394,12 @@
 		B8D4CEB91C521CDF002970F1 /* Download */ = {
 			isa = PBXGroup;
 			children = (
+				B8D3C4ED1C57619800B08271 /* YFDownloadManager.h */,
+				B8D3C4EE1C57619800B08271 /* YFDownloadManager.m */,
+				B8D3C4F31C57681B00B08271 /* YFDownloadInfo.h */,
+				B8D3C4F41C57681B00B08271 /* YFDownloadInfo.m */,
+				B8D3C4F61C57772F00B08271 /* YFDownloadConst.h */,
+				B8D3C4F71C57772F00B08271 /* YFDownloadConst.m */,
 			);
 			path = Download;
 			sourceTree = "<group>";
@@ -410,6 +425,7 @@
 				B8C6D72F1BDA193800E83A6F /* Frameworks */,
 				B8C6D7301BDA193800E83A6F /* Resources */,
 				A7F09EF84132F212C675D97F /* Copy Pods Resources */,
+				F9F21A5CB6988860D4412434 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -530,6 +546,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F9F21A5CB6988860D4412434 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -550,6 +581,8 @@
 				B8BDB0721BE1BE9B001FA9F8 /* CollectionCell.m in Sources */,
 				B8093A8F1C48F9B300510866 /* UIAlertView+YFCategory.m in Sources */,
 				B8093A8E1C48F9B300510866 /* NSString+YFCategory.m in Sources */,
+				B8D3C4F51C57681B00B08271 /* YFDownloadInfo.m in Sources */,
+				B8D3C4EF1C57619800B08271 /* YFDownloadManager.m in Sources */,
 				B8C6D78A1BDA2E2B00E83A6F /* LeftViewController.m in Sources */,
 				B8C6D77C1BDA1BA500E83A6F /* BaseModel.m in Sources */,
 				B8C6D7921BDA333300E83A6F /* WaterFallFlowLayout.m in Sources */,
@@ -563,6 +596,7 @@
 				B8093A921C48F9B300510866 /* UIView+YFCategory.m in Sources */,
 				B8C6D76A1BDA1A6600E83A6F /* Common.m in Sources */,
 				B8D4CEBA1C521CDF002970F1 /* DBManager.m in Sources */,
+				B8D3C4F81C57772F00B08271 /* YFDownloadConst.m in Sources */,
 				B8C6D78E1BDA323000E83A6F /* WaterFallCell.m in Sources */,
 				B8C6D77D1BDA1BA500E83A6F /* BaseViewController.m in Sources */,
 				B8C6D73B1BDA193800E83A6F /* AppDelegate.m in Sources */,

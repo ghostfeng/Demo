@@ -4,7 +4,7 @@
 
 @implementation NSString (YFCategory)
 
-- (NSString *)MD5String
+- (NSString *)MD5
 {
     // 得出bytes
     const char *cstring = self.UTF8String;
@@ -17,6 +17,11 @@
         [md5String appendFormat:@"%02x", bytes[i]];
     }
     return md5String;
+}
+
+- (NSInteger)fileSize
+{
+    return [[[NSFileManager defaultManager] attributesOfItemAtPath:self error:nil][NSFileSize] integerValue];
 }
 
 - (NSString *)prependCaches
@@ -101,6 +106,13 @@
 {
     NSString * emailRegex = @"^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$";
     NSPredicate *pred  = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",emailRegex];
+    return [pred evaluateWithObject:self];
+}
+
+- (BOOL)isWebSite
+{
+    NSString * webRegex = @"^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$";
+    NSPredicate *pred  = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",webRegex];
     return [pred evaluateWithObject:self];
 }
 @end

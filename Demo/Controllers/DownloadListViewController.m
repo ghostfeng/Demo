@@ -9,7 +9,7 @@
 #import "DownloadListViewController.h"
 
 @interface DownloadListViewController ()
-
+@property (nonatomic, strong) NSArray *fileList;
 @end
 
 @implementation DownloadListViewController
@@ -19,6 +19,25 @@
     self.title = @"下载列表";
     
     self.tableView.tableFooterView = [UIView new];
+}
+
+- (NSArray *)fileList
+{
+    if (!_fileList) {
+        _fileList = @[@{@"url":@"http://www.910app.cn/uploads/video/14417659573752045642929987483826015.mp4",
+                        @"name":@"Wonder Girls",
+                        @"fileId":@"111"},
+                      @{@"url":@"http://910app.cn/uploads/music/14447272758771027468068133881734916.mp3",
+                        @"name":@"像梦一样自由",
+                        @"fileId":@"222"},
+                      @{@"url":@"http://910app.cn/uploads/music/14443740559077285247513697223883666.mp3",
+                        @"name":@"音乐1",
+                        @"fileId":@"333"},
+                      @{@"url":@"http://910app.cn/uploads/music/14417659011026854043481871717743845.mp3",
+                        @"name":@"夜曲",
+                        @"fileId":@"444"}];
+    }
+    return _fileList;
 }
 
 #pragma mark - UITableViewDataSource

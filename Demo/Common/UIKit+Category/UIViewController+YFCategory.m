@@ -38,7 +38,9 @@
 static char MethodKey;
 - (void)setMethod:(NSString *)method
 {
+    [self willChangeValueForKey:@"method"];
     objc_setAssociatedObject(self, &MethodKey, method, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    [self didChangeValueForKey:@"method"];
 }
 
 - (NSString *)method

@@ -30,7 +30,7 @@
  *  @brief  加载主视图
  */
 - (void)loadMain {
-    
+
     MMDrawerController *drawerController = [[MMDrawerController alloc]initWithCenterViewController:[[UINavigationController alloc]initWithRootViewController:getControllerFromStoryBoard(@"Main", @"ViewControllerID")] leftDrawerViewController:[[LeftViewController alloc]init]];
 
     //设置最大右侧侧拉宽度

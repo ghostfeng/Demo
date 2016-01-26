@@ -6,7 +6,10 @@
 
 #pragma mark - 加密
 /** 字符串MD5加密 */
-- (NSString *)MD5String;
+- (NSString *)MD5;
+
+/** 当前路径下文件的大小 */
+- (NSInteger)fileSize;
 
 #pragma mark - 拼接沙盒路径
 /** 拼接沙盒Caches路径 */
@@ -37,4 +40,7 @@
 
 /** 验证是否是邮箱 */
 - (BOOL)isEmail;
+
+/** 验证是否是网址 */
+- (BOOL)isWebSite;
 @end
