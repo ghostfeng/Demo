@@ -43,4 +43,16 @@
 
 /** 验证是否是网址 */
 - (BOOL)isWebSite;
+
+#pragma mark - 日期转化
+/**
+ *  将日期对象转化成对应格式的字符串
+ *
+ *  @param date            日期
+ *  @param formatterString 格式化字符串
+ *
+ *  @return 格式化之后的时间字符串
+ */
++ (NSString *)stringWithDate:(NSDate *)date
+             formatterString:(NSString *)formatterString;
 @end

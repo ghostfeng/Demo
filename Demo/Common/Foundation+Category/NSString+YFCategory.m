@@ -4,6 +4,7 @@
 
 @implementation NSString (YFCategory)
 
+#pragma mark - 加密
 - (NSString *)MD5
 {
     // 得出bytes
@@ -24,6 +25,7 @@
     return [[[NSFileManager defaultManager] attributesOfItemAtPath:self error:nil][NSFileSize] integerValue];
 }
 
+#pragma mark - 拼接沙盒路径
 - (NSString *)prependCaches
 {
     return [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:self];
@@ -44,6 +46,7 @@
     return [NSTemporaryDirectory() stringByAppendingPathComponent:self];
 }
 
+#pragma mark - 文件夹的创建与删除
 - (BOOL)createDirectory
 {
     BOOL isDirectory = NO;
@@ -82,6 +85,7 @@
     return flag;
 }
 
+#pragma mark - 验证信息
 - (BOOL)isPhoneNumber
 {
     NSString * phoneRegex = @"^(0|86|17951)?(13[0-9]|15[0-9]|17[0-9]|18[0-9]|14[0-9])[0-9]{8}$";
@@ -114,5 +118,14 @@
     NSString * webRegex = @"^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$";
     NSPredicate *pred  = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",webRegex];
     return [pred evaluateWithObject:self];
+}
+
+#pragma mark - 日期转化
++ (NSString *)stringWithDate:(NSDate *)date
+             formatterString:(NSString *)formatterString
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:formatterString];
+    return [formatter stringFromDate:date];
 }
 @end

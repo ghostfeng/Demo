@@ -14,6 +14,7 @@
 #import "NSString+YFCategory.h"
 #import "NSObject+YFCategory.h"
 #import "MBProgressHUD+Category.h"
+#import "UIScreen+YFCategory.h"
 #import <Foundation/Foundation.h>
 #import "MMExampleDrawerVisualStateManager.h"
 #import <UIImageView+WebCache.h>

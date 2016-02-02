@@ -19,6 +19,10 @@
 		B82CFFA51BE1BB8100D289FF /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82CFFA31BE1BB8100D289FF /* CollectionHeaderView.xib */; };
 		B82CFFA91BE1BB9100D289FF /* CollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B82CFFA71BE1BB9100D289FF /* CollectionFooterView.m */; };
 		B82CFFAA1BE1BB9100D289FF /* CollectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82CFFA81BE1BB9100D289FF /* CollectionFooterView.xib */; };
+		B85FB0531C586816002D5748 /* FileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B85FB0521C586816002D5748 /* FileModel.m */; };
+		B85FB0571C586A46002D5748 /* DownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B85FB0551C586A46002D5748 /* DownloadCell.m */; };
+		B85FB0581C586A46002D5748 /* DownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B85FB0561C586A46002D5748 /* DownloadCell.xib */; };
+		B85FB05B1C58906E002D5748 /* UIScreen+YFCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B85FB05A1C58906E002D5748 /* UIScreen+YFCategory.m */; };
 		B875316F1BE0D0BC000B61F9 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B875316E1BE0D0BC000B61F9 /* Tools.m */; };
 		B8BDB0721BE1BE9B001FA9F8 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BDB0701BE1BE9B001FA9F8 /* CollectionCell.m */; };
 		B8BDB0731BE1BE9B001FA9F8 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8BDB0711BE1BE9B001FA9F8 /* CollectionCell.xib */; };
@@ -47,6 +51,7 @@
 		B8D4CEB21C521B1C002970F1 /* DownloadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D4CEB11C521B1C002970F1 /* DownloadListViewController.m */; };
 		B8D4CEBA1C521CDF002970F1 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D4CEB51C521CDF002970F1 /* DBManager.m */; };
 		B8D4CEBB1C521CDF002970F1 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D4CEB81C521CDF002970F1 /* DataService.m */; };
+		B8D72BCD1C607E7C0058DD53 /* NSDate+YFCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D72BCC1C607E7C0058DD53 /* NSDate+YFCategory.m */; };
 		B8F76FB91BDF0DD40017A741 /* MBProgressHUD+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F76FB81BDF0DD40017A741 /* MBProgressHUD+Category.m */; };
 		BC407622B08F117655EBD68B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E93BE241C6BCDA5DE2F2310 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -87,6 +92,13 @@
 		B82CFFA61BE1BB9100D289FF /* CollectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionFooterView.h; sourceTree = "<group>"; };
 		B82CFFA71BE1BB9100D289FF /* CollectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionFooterView.m; sourceTree = "<group>"; };
 		B82CFFA81BE1BB9100D289FF /* CollectionFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionFooterView.xib; sourceTree = "<group>"; };
+		B85FB0511C586816002D5748 /* FileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileModel.h; sourceTree = "<group>"; };
+		B85FB0521C586816002D5748 /* FileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileModel.m; sourceTree = "<group>"; };
+		B85FB0541C586A46002D5748 /* DownloadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadCell.h; sourceTree = "<group>"; };
+		B85FB0551C586A46002D5748 /* DownloadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadCell.m; sourceTree = "<group>"; };
+		B85FB0561C586A46002D5748 /* DownloadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadCell.xib; sourceTree = "<group>"; };
+		B85FB0591C58906E002D5748 /* UIScreen+YFCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+YFCategory.h"; sourceTree = "<group>"; };
+		B85FB05A1C58906E002D5748 /* UIScreen+YFCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+YFCategory.m"; sourceTree = "<group>"; };
 		B875316D1BE0D0BC000B61F9 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		B875316E1BE0D0BC000B61F9 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		B87AC52A1BDE299400B8D7DC /* PortUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortUrl.h; sourceTree = "<group>"; };
@@ -142,6 +154,8 @@
 		B8D4CEB51C521CDF002970F1 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		B8D4CEB71C521CDF002970F1 /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
 		B8D4CEB81C521CDF002970F1 /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		B8D72BCB1C607E7C0058DD53 /* NSDate+YFCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YFCategory.h"; sourceTree = "<group>"; };
+		B8D72BCC1C607E7C0058DD53 /* NSDate+YFCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YFCategory.m"; sourceTree = "<group>"; };
 		B8F76FB71BDF0DD40017A741 /* MBProgressHUD+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Category.h"; sourceTree = "<group>"; };
 		B8F76FB81BDF0DD40017A741 /* MBProgressHUD+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +194,8 @@
 				B8093A7F1C48F9B300510866 /* NSObject+YFCategory.m */,
 				B8093A801C48F9B300510866 /* NSString+YFCategory.h */,
 				B8093A811C48F9B300510866 /* NSString+YFCategory.m */,
+				B8D72BCB1C607E7C0058DD53 /* NSDate+YFCategory.h */,
+				B8D72BCC1C607E7C0058DD53 /* NSDate+YFCategory.m */,
 			);
 			path = "Foundation+Category";
 			sourceTree = "<group>";
@@ -197,8 +213,19 @@
 				B8093A8A1C48F9B300510866 /* UIView+YFCategory.m */,
 				B8093A8B1C48F9B300510866 /* UIViewController+YFCategory.h */,
 				B8093A8C1C48F9B300510866 /* UIViewController+YFCategory.m */,
+				B85FB0591C58906E002D5748 /* UIScreen+YFCategory.h */,
+				B85FB05A1C58906E002D5748 /* UIScreen+YFCategory.m */,
 			);
 			path = "UIKit+Category";
+			sourceTree = "<group>";
+		};
+		B85FB0501C586808002D5748 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B85FB0511C586816002D5748 /* FileModel.h */,
+				B85FB0521C586816002D5748 /* FileModel.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B8C6D7291BDA193800E83A6F = {
@@ -230,7 +257,7 @@
 				B8C6D75B1BDA19ED00E83A6F /* Base */,
 				B8C6D75C1BDA19ED00E83A6F /* Common */,
 				B8C6D75D1BDA19ED00E83A6F /* Controllers */,
-				B8C6D75E1BDA19ED00E83A6F /* Model */,
+				B85FB0501C586808002D5748 /* Models */,
 				B8C6D75F1BDA19ED00E83A6F /* Views */,
 				B8C6D77E1BDA1C2100E83A6F /* ThirdLibrary */,
 				B8C6D73F1BDA193800E83A6F /* Main.storyboard */,
@@ -321,13 +348,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		B8C6D75E1BDA19ED00E83A6F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		B8C6D75F1BDA19ED00E83A6F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +365,9 @@
 				B8BDB06F1BE1BE9B001FA9F8 /* CollectionCell.h */,
 				B8BDB0701BE1BE9B001FA9F8 /* CollectionCell.m */,
 				B8BDB0711BE1BE9B001FA9F8 /* CollectionCell.xib */,
+				B85FB0541C586A46002D5748 /* DownloadCell.h */,
+				B85FB0551C586A46002D5748 /* DownloadCell.m */,
+				B85FB0561C586A46002D5748 /* DownloadCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -497,6 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8C6D78F1BDA323000E83A6F /* WaterFallCell.xib in Resources */,
+				B85FB0581C586A46002D5748 /* DownloadCell.xib in Resources */,
 				B82CFFAA1BE1BB9100D289FF /* CollectionFooterView.xib in Resources */,
 				B8C6D7411BDA193800E83A6F /* Main.storyboard in Resources */,
 				B8C6D7461BDA193800E83A6F /* LaunchScreen.xib in Resources */,
@@ -571,6 +595,7 @@
 				B82CFFA91BE1BB9100D289FF /* CollectionFooterView.m in Sources */,
 				B82CFFA41BE1BB8100D289FF /* CollectionHeaderView.m in Sources */,
 				B8C6D77B1BDA1BA500E83A6F /* BaseMJTableView.m in Sources */,
+				B8D72BCD1C607E7C0058DD53 /* NSDate+YFCategory.m in Sources */,
 				B82CFFA01BE1BB4C00D289FF /* CollectionViewController.m in Sources */,
 				B875316F1BE0D0BC000B61F9 /* Tools.m in Sources */,
 				B8D4CEB21C521B1C002970F1 /* DownloadListViewController.m in Sources */,
@@ -591,15 +616,18 @@
 				B8D4CEBB1C521CDF002970F1 /* DataService.m in Sources */,
 				B8C6D7821BDA1D6A00E83A6F /* MMExampleDrawerVisualStateManager.m in Sources */,
 				B8093A8D1C48F9B300510866 /* NSObject+YFCategory.m in Sources */,
+				B85FB0531C586816002D5748 /* FileModel.m in Sources */,
 				B8C6D7871BDA2CD800E83A6F /* ViewController.m in Sources */,
 				B8C6D7951BDA335F00E83A6F /* WaterFlowViewController.m in Sources */,
 				B8093A921C48F9B300510866 /* UIView+YFCategory.m in Sources */,
 				B8C6D76A1BDA1A6600E83A6F /* Common.m in Sources */,
 				B8D4CEBA1C521CDF002970F1 /* DBManager.m in Sources */,
+				B85FB0571C586A46002D5748 /* DownloadCell.m in Sources */,
 				B8D3C4F81C57772F00B08271 /* YFDownloadConst.m in Sources */,
 				B8C6D78E1BDA323000E83A6F /* WaterFallCell.m in Sources */,
 				B8C6D77D1BDA1BA500E83A6F /* BaseViewController.m in Sources */,
 				B8C6D73B1BDA193800E83A6F /* AppDelegate.m in Sources */,
+				B85FB05B1C58906E002D5748 /* UIScreen+YFCategory.m in Sources */,
 				B8C6D7381BDA193800E83A6F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
