@@ -10,6 +10,7 @@
 #import "WaterFlowViewController.h"
 #import "CollectionViewController.h"
 #import "DownloadListViewController.h"
+#import "CalendarViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -23,7 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"Demo汇总";
 
-    self.titles = @[@"collectionView实现瀑布流",@"collectionView",@"断点续传"];
+    self.titles = @[@"collectionView实现瀑布流",@"collectionView",@"断点续传",@"搜索框",@"日历"];
 
     [self initViews];
     
@@ -122,7 +123,8 @@
             break;
         case 4:
         {
-
+            CalendarViewController *calendar = [[CalendarViewController alloc]init];
+            [self.navigationController pushViewController:calendar animated:YES];
         }
             break;
         case 5:
