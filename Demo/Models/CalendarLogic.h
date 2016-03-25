@@ -27,4 +27,7 @@
  */
 - (NSMutableArray *)getMonthArrayFromDate:(NSDate *)fromDate beforeAfterDays:(NSInteger)days;
 
+/** 更新CalendarDayModel */
+- (void)selectCalendarDayModel:(CalendarDayModel *)model;
+
 @end

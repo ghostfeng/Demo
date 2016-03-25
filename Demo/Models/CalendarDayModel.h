@@ -40,4 +40,7 @@ typedef NS_ENUM(NSInteger, CalendarDayType) {
 /** 自定义初始化方法 */
 + (instancetype)calendarDayWithYear:(NSUInteger)year month:(NSUInteger)month day:(NSUInteger)day;
 
+
+/** 判断是不是同一天 */
+- (BOOL)isEqualTo:(CalendarDayModel *)day;
 @end

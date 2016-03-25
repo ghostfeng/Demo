@@ -140,6 +140,9 @@ static CalendarLogic *calendarlogic = nil;
             }else{
                 model.type = CalendarDayTypeFuture;
             }
+            if ([model isEqualTo:self.selectDayModel]) {
+                model.type = CalendarDayTypeClick;
+            }
         }
             break;
         case NSOrderedDescending:
@@ -150,6 +153,24 @@ static CalendarLogic *calendarlogic = nil;
         default:
             break;
     }
+}
+
+- (void)selectCalendarDayModel:(CalendarDayModel *)model
+{
+    if ([self.selectDayModel isEqualTo:model]) {
+        return;
+    }
+    if (model.type == CalendarDayTypeClick || model.type == CalendarDayTypePast) {
+        return;
+    }
+    
+    if (self.selectDayModel.week == 1 || self.selectDayModel.week == 7) {
+        self.selectDayModel.type = CalendarDayTypeWeekend;
+    }else{
+        self.selectDayModel.type = CalendarDayTypeFuture;
+    }
+    model.type = CalendarDayTypeClick;
+    self.selectDayModel = model;
 }
 
 @end

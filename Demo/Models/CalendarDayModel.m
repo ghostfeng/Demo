@@ -24,4 +24,10 @@
     return model;
 }
 
+//判断是不是同一天
+- (BOOL)isEqualTo:(CalendarDayModel *)day
+{
+    BOOL isEqual = (self.year == day.year) && (self.month == day.month) && (self.day == day.day);
+    return isEqual;
+}
 @end

@@ -62,7 +62,9 @@
             break;
         case CalendarDayTypeClick:
         {
+            self.solarDay.textColor = [UIColor whiteColor];
             [self hidden_NO];
+            self.selectImageView.hidden = NO;
         }
             break;
         default:
@@ -110,6 +112,11 @@
 {
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.layer.borderWidth = 1;
+    
+    //选中图片
+    self.selectImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"check"]];
+    [self.contentView addSubview:self.selectImageView];
+    
     //阳历
     self.solarDay = [[UILabel alloc]init];
     self.solarDay.textAlignment = NSTextAlignmentCenter;
@@ -123,10 +130,6 @@
     self.lunarDay.textAlignment = NSTextAlignmentCenter;
     [self.contentView addSubview:self.lunarDay];
     self.lunarDay.text = @"廿一";
-    
-    //选中图片
-    self.selectImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"check"]];
-    [self.contentView addSubview:self.selectImageView];
 }
 
 @end

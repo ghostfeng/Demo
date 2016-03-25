@@ -15,7 +15,11 @@
 @interface CalendarViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 /** 日历集合视图 */
 @property (nonatomic, strong) UICollectionView *collectionView;
+/** 日历数据 */
 @property (nonatomic, strong) NSMutableArray *calendarMonthArray;
+/** 选中的indexPath */
+@property (nonatomic, strong) NSIndexPath *indexPath;
+
 @end
 
 @implementation CalendarViewController
@@ -91,7 +95,15 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CalendarDayModel *model = self.calendarMonthArray[indexPath.section][indexPath.row];
-    NSLog(@"%zd - %zd - %zd",model.year,model.month,model.day);
+    [[CalendarLogic shareCalendarLogic]selectCalendarDayModel:model];
+    [self.collectionView reloadData];
+//    if (self.indexPath == nil) {
+//        self.indexPath = indexPath;
+//    }
+//    if (self.indexPath != indexPath) {
+//        [self.collectionView reloadItemsAtIndexPaths:@[self.indexPath,indexPath]];
+//    }
+//    self.indexPath = indexPath;
 }
 
 - (void)didReceiveMemoryWarning {

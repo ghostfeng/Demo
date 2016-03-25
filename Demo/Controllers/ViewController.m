@@ -13,6 +13,9 @@
 #import "CalendarViewController.h"
 
 @interface ViewController ()
+{
+    CalendarViewController *calendar;
+}
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)NSArray *titles;
 @end
@@ -123,7 +126,9 @@
             break;
         case 4:
         {
-            CalendarViewController *calendar = [[CalendarViewController alloc]init];
+            if (!calendar) {
+                calendar = [[CalendarViewController alloc]init];
+            }
             [self.navigationController pushViewController:calendar animated:YES];
         }
             break;
