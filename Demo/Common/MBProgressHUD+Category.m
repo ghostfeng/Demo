@@ -51,9 +51,10 @@ static MBProgressHUD * load_hud = nil;
         superView = [UIApplication sharedApplication].keyWindow;
     }
     
-    if (!load_hud) {
-        load_hud = [MBProgressHUD showHUDAddedTo:superView animated:YES];
+    if (load_hud) {
+        [self hideHUD];
     }
+    load_hud = [MBProgressHUD showHUDAddedTo:superView animated:YES];
     load_hud.labelText = title;
     load_hud.cornerRadius = 3;
     load_hud.alpha = 0.9;

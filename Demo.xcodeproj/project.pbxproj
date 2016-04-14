@@ -15,6 +15,8 @@
 		1C93C7071CA3D10E00BEE379 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C93C7061CA3D10E00BEE379 /* check.png */; };
 		1C93C70A1CA3D3FD00BEE379 /* CalendarFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C93C7091CA3D3FD00BEE379 /* CalendarFlowLayout.m */; };
 		1C93C70D1CA3D7F700BEE379 /* CalendarLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C93C70C1CA3D7F700BEE379 /* CalendarLogic.m */; };
+		1CAC928E1CBF898500340D64 /* YFRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC928D1CBF898500340D64 /* YFRatingView.m */; };
+		1CAC92901CBF965200340D64 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC928F1CBF965200340D64 /* LeftViewController.xib */; };
 		1CB38CDE1C9F9E7300B79156 /* SearchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB38CDD1C9F9E7300B79156 /* SearchListViewController.m */; };
 		1CB38CE41C9FCD2100B79156 /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB38CE31C9FCD2100B79156 /* CustomTextView.m */; };
 		1CB38CE71C9FCE2800B79156 /* TopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB38CE61C9FCE2800B79156 /* TopScrollView.m */; };
@@ -93,6 +95,9 @@
 		1C93C7091CA3D3FD00BEE379 /* CalendarFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarFlowLayout.m; sourceTree = "<group>"; };
 		1C93C70B1CA3D7F700BEE379 /* CalendarLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarLogic.h; sourceTree = "<group>"; };
 		1C93C70C1CA3D7F700BEE379 /* CalendarLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarLogic.m; sourceTree = "<group>"; };
+		1CAC928C1CBF898500340D64 /* YFRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRatingView.h; sourceTree = "<group>"; };
+		1CAC928D1CBF898500340D64 /* YFRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRatingView.m; sourceTree = "<group>"; };
+		1CAC928F1CBF965200340D64 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
 		1CB38CDC1C9F9E7300B79156 /* SearchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchListViewController.h; sourceTree = "<group>"; };
 		1CB38CDD1C9F9E7300B79156 /* SearchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchListViewController.m; sourceTree = "<group>"; };
 		1CB38CE21C9FCD2100B79156 /* CustomTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextView.h; sourceTree = "<group>"; };
@@ -217,6 +222,8 @@
 				1CB38CE31C9FCD2100B79156 /* CustomTextView.m */,
 				1CB38CE51C9FCE2800B79156 /* TopScrollView.h */,
 				1CB38CE61C9FCE2800B79156 /* TopScrollView.m */,
+				1CAC928C1CBF898500340D64 /* YFRatingView.h */,
+				1CAC928D1CBF898500340D64 /* YFRatingView.m */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -387,6 +394,7 @@
 				B8C6D7861BDA2CD800E83A6F /* ViewController.m */,
 				B8C6D7881BDA2E2B00E83A6F /* LeftViewController.h */,
 				B8C6D7891BDA2E2B00E83A6F /* LeftViewController.m */,
+				1CAC928F1CBF965200340D64 /* LeftViewController.xib */,
 				B8C6D7931BDA335F00E83A6F /* WaterFlowViewController.h */,
 				B8C6D7941BDA335F00E83A6F /* WaterFlowViewController.m */,
 				B82CFF9E1BE1BB4C00D289FF /* CollectionViewController.h */,
@@ -580,6 +588,7 @@
 			files = (
 				B8C6D78F1BDA323000E83A6F /* WaterFallCell.xib in Resources */,
 				B85FB0581C586A46002D5748 /* DownloadCell.xib in Resources */,
+				1CAC92901CBF965200340D64 /* LeftViewController.xib in Resources */,
 				B82CFFAA1BE1BB9100D289FF /* CollectionFooterView.xib in Resources */,
 				B8C6D7411BDA193800E83A6F /* Main.storyboard in Resources */,
 				B8C6D7461BDA193800E83A6F /* LaunchScreen.xib in Resources */,
@@ -692,6 +701,7 @@
 				B8093A921C48F9B300510866 /* UIView+YFCategory.m in Sources */,
 				B8C6D76A1BDA1A6600E83A6F /* Common.m in Sources */,
 				B8D4CEBA1C521CDF002970F1 /* DBManager.m in Sources */,
+				1CAC928E1CBF898500340D64 /* YFRatingView.m in Sources */,
 				B85FB0571C586A46002D5748 /* DownloadCell.m in Sources */,
 				B8D3C4F81C57772F00B08271 /* YFDownloadConst.m in Sources */,
 				B8C6D78E1BDA323000E83A6F /* WaterFallCell.m in Sources */,

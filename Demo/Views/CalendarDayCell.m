@@ -51,7 +51,7 @@
         case CalendarDayTypeFuture:
         {
             [self hidden_NO];
-            self.solarDay.textColor = [UIColor blueColor];
+            self.solarDay.textColor = [UIColor blackColor];
         }
             break;
         case CalendarDayTypeWeekend:
@@ -110,8 +110,8 @@
 /** 初始化子试图 */
 - (void)setUpSubviews
 {
-    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.layer.borderWidth = 1;
+//    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    self.layer.borderWidth = 1;
     
     //选中图片
     self.selectImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"check"]];
@@ -123,6 +123,7 @@
     self.solarDay.font = [UIFont systemFontOfSize:14];
     [self.contentView addSubview:self.solarDay];
     self.solarDay.text = @"20";
+    
     //农历
     self.lunarDay = [[UILabel alloc]init];
     self.lunarDay.textColor = [UIColor lightGrayColor];

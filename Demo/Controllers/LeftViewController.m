@@ -7,8 +7,10 @@
 //
 
 #import "LeftViewController.h"
+#import "YFRatingView.h"
 
 @interface LeftViewController ()
+@property (weak, nonatomic) IBOutlet YFRatingView *rateview2;
 
 @end
 
@@ -17,7 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    YFRatingView *ratingView = [[YFRatingView alloc]initWithFrame:CGRectMake(10, 100, 170, 30)];
+    ratingView.backgroundColor = [UIColor greenColor];
+    ratingView.score = 6.5;
+    [self.view addSubview:ratingView];
+    
+    self.rateview2.score = 3.5;
 }
 
 - (void)didReceiveMemoryWarning {
