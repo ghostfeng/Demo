@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C70B20D1CC9C865006B4B7A /* KBCrossStoryBoardModalSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70B2061CC9C865006B4B7A /* KBCrossStoryBoardModalSegue.m */; };
+		1C70B20E1CC9C865006B4B7A /* KBCrossStoryBoardPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70B2081CC9C865006B4B7A /* KBCrossStoryBoardPushSegue.m */; };
+		1C70B20F1CC9C865006B4B7A /* KBSegueSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70B20A1CC9C865006B4B7A /* KBSegueSender.m */; };
+		1C70B2101CC9C865006B4B7A /* UIViewController+KBAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70B20C1CC9C865006B4B7A /* UIViewController+KBAdditional.m */; };
 		1C93C6F61CA3BFD800BEE379 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C93C6F51CA3BFD800BEE379 /* CalendarViewController.m */; };
 		1C93C6FA1CA3C26600BEE379 /* CalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C93C6F81CA3C26600BEE379 /* CalendarHeaderView.m */; };
 		1C93C6FB1CA3C26600BEE379 /* CalendarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C93C6F91CA3C26600BEE379 /* CalendarHeaderView.xib */; };
@@ -81,6 +85,14 @@
 
 /* Begin PBXFileReference section */
 		0A1FE5D508DA2F55464F7F3C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1C70B2051CC9C865006B4B7A /* KBCrossStoryBoardModalSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBCrossStoryBoardModalSegue.h; sourceTree = "<group>"; };
+		1C70B2061CC9C865006B4B7A /* KBCrossStoryBoardModalSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBCrossStoryBoardModalSegue.m; sourceTree = "<group>"; };
+		1C70B2071CC9C865006B4B7A /* KBCrossStoryBoardPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBCrossStoryBoardPushSegue.h; sourceTree = "<group>"; };
+		1C70B2081CC9C865006B4B7A /* KBCrossStoryBoardPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBCrossStoryBoardPushSegue.m; sourceTree = "<group>"; };
+		1C70B2091CC9C865006B4B7A /* KBSegueSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSegueSender.h; sourceTree = "<group>"; };
+		1C70B20A1CC9C865006B4B7A /* KBSegueSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSegueSender.m; sourceTree = "<group>"; };
+		1C70B20B1CC9C865006B4B7A /* UIViewController+KBAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KBAdditional.h"; sourceTree = "<group>"; };
+		1C70B20C1CC9C865006B4B7A /* UIViewController+KBAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KBAdditional.m"; sourceTree = "<group>"; };
 		1C93C6F41CA3BFD800BEE379 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		1C93C6F51CA3BFD800BEE379 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		1C93C6F71CA3C26600BEE379 /* CalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarHeaderView.h; sourceTree = "<group>"; };
@@ -215,6 +227,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C70B2041CC9C865006B4B7A /* storyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				1C70B2051CC9C865006B4B7A /* KBCrossStoryBoardModalSegue.h */,
+				1C70B2061CC9C865006B4B7A /* KBCrossStoryBoardModalSegue.m */,
+				1C70B2071CC9C865006B4B7A /* KBCrossStoryBoardPushSegue.h */,
+				1C70B2081CC9C865006B4B7A /* KBCrossStoryBoardPushSegue.m */,
+				1C70B2091CC9C865006B4B7A /* KBSegueSender.h */,
+				1C70B20A1CC9C865006B4B7A /* KBSegueSender.m */,
+				1C70B20B1CC9C865006B4B7A /* UIViewController+KBAdditional.h */,
+				1C70B20C1CC9C865006B4B7A /* UIViewController+KBAdditional.m */,
+			);
+			path = storyBoard;
+			sourceTree = "<group>";
+		};
 		1CB38CE11C9FCD2100B79156 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +397,7 @@
 		B8C6D75C1BDA19ED00E83A6F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1C70B2041CC9C865006B4B7A /* storyBoard */,
 				B8093A7D1C48F9B300510866 /* Foundation+Category */,
 				B8093A821C48F9B300510866 /* UIKit+Category */,
 				B8D4CEB31C521CDF002970F1 /* Database */,
@@ -664,6 +692,7 @@
 			files = (
 				B82CFFA91BE1BB9100D289FF /* CollectionFooterView.m in Sources */,
 				B82CFFA41BE1BB8100D289FF /* CollectionHeaderView.m in Sources */,
+				1C70B20E1CC9C865006B4B7A /* KBCrossStoryBoardPushSegue.m in Sources */,
 				1C93C6FE1CA3C84100BEE379 /* CalendarDayModel.m in Sources */,
 				B8C6D77B1BDA1BA500E83A6F /* BaseMJTableView.m in Sources */,
 				B8D72BCD1C607E7C0058DD53 /* NSDate+YFCategory.m in Sources */,
@@ -682,16 +711,19 @@
 				B8093A8F1C48F9B300510866 /* UIAlertView+YFCategory.m in Sources */,
 				B8093A8E1C48F9B300510866 /* NSString+YFCategory.m in Sources */,
 				1C93C70D1CA3D7F700BEE379 /* CalendarLogic.m in Sources */,
+				1C70B2101CC9C865006B4B7A /* UIViewController+KBAdditional.m in Sources */,
 				B8D3C4F51C57681B00B08271 /* YFDownloadInfo.m in Sources */,
 				B8D3C4EF1C57619800B08271 /* YFDownloadManager.m in Sources */,
 				B8C6D78A1BDA2E2B00E83A6F /* LeftViewController.m in Sources */,
 				1CB38CE71C9FCE2800B79156 /* TopScrollView.m in Sources */,
+				1C70B20F1CC9C865006B4B7A /* KBSegueSender.m in Sources */,
 				B8C6D77C1BDA1BA500E83A6F /* BaseModel.m in Sources */,
 				B8C6D7921BDA333300E83A6F /* WaterFallFlowLayout.m in Sources */,
 				B8093A901C48F9B300510866 /* UIColor+YFCategory.m in Sources */,
 				B8093A931C48F9B300510866 /* UIViewController+YFCategory.m in Sources */,
 				B8D4CEBB1C521CDF002970F1 /* DataService.m in Sources */,
 				B8C6D7821BDA1D6A00E83A6F /* MMExampleDrawerVisualStateManager.m in Sources */,
+				1C70B20D1CC9C865006B4B7A /* KBCrossStoryBoardModalSegue.m in Sources */,
 				B8093A8D1C48F9B300510866 /* NSObject+YFCategory.m in Sources */,
 				B85FB0531C586816002D5748 /* FileModel.m in Sources */,
 				B8C6D7871BDA2CD800E83A6F /* ViewController.m in Sources */,
