@@ -86,10 +86,10 @@ static CGFloat starCount = 5;
 {
     _score = score;
     
-    CGFloat yellow_x = self.yellowStarView.frame.origin.x;
-    CGFloat yellow_y = self.yellowStarView.frame.origin.y;
-    CGFloat yellow_w = score*self.yellowStarView.frame.size.width/10.0;
-    CGFloat yellow_h = self.yellowStarView.frame.size.height;
+    CGFloat yellow_x = self.grayStarView.frame.origin.x;
+    CGFloat yellow_y = self.grayStarView.frame.origin.y;
+    CGFloat yellow_w = score*self.grayStarView.frame.size.width/10.0;
+    CGFloat yellow_h = self.grayStarView.frame.size.height;
     
     self.yellowStarView.frame = CGRectMake(yellow_x,yellow_y,yellow_w,yellow_h);
 }
