@@ -13,7 +13,7 @@
 /** 点击栏目回调的block */
 @property (nonatomic,copy) void(^listItemClickBlock)(NSString *itemName , NSInteger itemIndex);
 /** 栏目名称数据源 */
-@property (nonatomic,strong) NSMutableArray *dataList;
+@property (nonatomic,strong) NSArray *dataList;
 /** 点击对应索引的按钮的触发事件 */
 -(void)itemClickWithIndex:(NSInteger)index;
 
