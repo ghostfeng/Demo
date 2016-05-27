@@ -48,9 +48,8 @@ static CGFloat starCount = 5;
 - (void)setupSubViews
 {
     
-    starHeight = [UIImage imageNamed:@"yellow"].size.height;
-    starWidth = [UIImage imageNamed:@"yellow"].size.width;
- NSLog(@"frame = %@",NSStringFromCGRect(self.frame));
+    starHeight = [UIImage imageNamed:@"yellow"].size.height?[UIImage imageNamed:@"yellow"].size.height:1;
+    starWidth = [UIImage imageNamed:@"yellow"].size.width?[UIImage imageNamed:@"yellow"].size.width:1;
     
     //灰色星星视图
     self.grayStarView = [self startViewWithImageName:@"gray"];

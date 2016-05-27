@@ -47,9 +47,9 @@
     [super setText:text];
     
     if (text.length) {
-        _hidePlaceholder = NO;
-    }else{
         _hidePlaceholder = YES;
+    }else{
+        _hidePlaceholder = NO;
     }
     //手动调用drawRect方法
     [self setNeedsDisplay];
@@ -58,7 +58,7 @@
 - (void)setPlaceholderColor:(UIColor *)placeholderColor
 {
     _placeholderColor = [placeholderColor copy];
-
+    
     //绘制
     [self setNeedsDisplay];
 }
@@ -84,6 +84,8 @@
 
 - (void)drawRect:(CGRect)rect
 {
+    [super drawRect:rect];
+    
     if (_hidePlaceholder) {
         return;
     }else{
